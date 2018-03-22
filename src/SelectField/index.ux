@@ -1,0 +1,39 @@
+<import name="select-field" src="../components/SelectField"></import>
+<import name="cell-box" src="../components/CellBox"></import>
+<import name="container" src="../components/Container"></import>
+<import name="white-space" src="../components/WhiteSpace"></import>
+
+<template>
+  <container>
+    <white-space></white-space>
+    <cell-box head="{{head}}">
+      <select-field label="美食" first="true" options="{{options}}" title="{{title}}"></select-field>
+    </cell-box>
+  </container>
+</template>
+
+<script>
+export default {
+  data: () => ({
+    head: '请选择',
+    title:'选择美食',
+    options: [
+      {
+        id: 1,
+        label: '蛋糕'
+      }, {
+        id: 2,
+        label: '烧烤'
+      }, {
+        id: 3,
+        label: '麻辣烫'
+      }
+    ]
+  })
+}
+</script>
+
+<style>
+  .select-field {
+  }
+</style>

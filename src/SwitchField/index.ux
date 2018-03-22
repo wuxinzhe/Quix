@@ -1,0 +1,32 @@
+<import name="switch-field" src="../components/SwitchField"></import>
+<import name="cell-box" src="../components/CellBox"></import>
+<import name="container" src="../components/Container"></import>
+<import name="white-space" src="../components/WhiteSpace"></import>
+<import name="example-page" src="../Widgets/ExamplePage"></import>
+
+<template>
+  <container>
+    <example-page title="SwitchField" name="开关">
+      <white-space></white-space>
+      <cell-box head="是否打开声音？">
+        <switch-field label="声音" first="true" value="{{checked}}" onchange="onChange"></switch-field>
+      </cell-box>
+    </example-page>
+  </container>
+</template>
+
+<script>
+export default {
+  data: () => ({
+    checked: true
+  }),
+  onChange ({ detail: { value } }) {
+    this.checked = value
+  }
+}
+</script>
+
+<style>
+  .switch-field {
+  }
+</style>

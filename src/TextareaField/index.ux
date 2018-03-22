@@ -1,0 +1,27 @@
+<import name="textarea-field" src="../components/TextareaField"></import>
+<import name="cell-box" src="../components/CellBox"></import>
+<import name="container" src="../components/Container"></import>
+<import name="white-space" src="../components/WhiteSpace"></import>
+<import name="example-page" src="../Widgets/ExamplePage"></import>
+
+<template>
+  <container>
+    <example-page title="TextareaField" name="多行文本">
+      <white-space></white-space>
+      <cell-box head="你有什么建议呢？">
+        <textarea-field first="true" value="多行文本输入"></textarea-field>
+      </cell-box>
+    </example-page>
+  </container>
+</template>
+
+<script>
+export default {
+  data: () => ({})
+}
+</script>
+
+<style>
+  .textarea-field {
+  }
+</style>

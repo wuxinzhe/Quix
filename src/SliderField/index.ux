@@ -1,0 +1,30 @@
+<import name="slider-field" src="../components/SliderField"></import>
+<import name="cell-box" src="../components/CellBox"></import>
+<import name="container" src="../components/Container"></import>
+<import name="white-space" src="../components/WhiteSpace"></import>
+<import name="example-page" src="../Widgets/ExamplePage"></import>
+
+<template>
+  <container>
+    <example-page title="SliderField" name="滑块">
+      <white-space></white-space>
+      <cell-box head="{{head}}">
+        <slider-field label="音量" first="true" value="{{count}}" show-value="true"></slider-field>
+      </cell-box>
+    </example-page>
+  </container>
+</template>
+
+<script>
+export default {
+  data: () => ({
+    count: 50,
+    head: '请拖动滑块'
+  })
+}
+</script>
+
+<style>
+  .slider-field {
+  }
+</style>

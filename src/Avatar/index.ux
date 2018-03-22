@@ -1,0 +1,36 @@
+<import name="white-space" src="../components/WhiteSpace"></import>
+<import name="container" src="../components/Container"></import>
+<import name="wind-blank" src="../components/WindBlank"></import>
+<import name="avatar" src="../components/Avatar"></import>
+<import name="flex" src="../components/Flex"></import>
+<import name="example-page" src="../Widgets/ExamplePage"></import>
+
+
+<template>
+  <container>
+    <example-page title="Avatar" name="头像">
+      <wind-blank>
+        <flex align="center" justify="space-between">
+          <avatar src="{{logo}}" alt="logo" size="sm"></avatar>
+          <white-space></white-space>
+          <avatar src="{{logo}}" alt="logo" size="md"></avatar>
+          <white-space></white-space>
+          <avatar src="{{logo}}" alt="logo" size="lg"></avatar>
+        </flex>
+      </wind-blank>
+    </example-page>
+  </container>
+</template>
+
+<script>
+export default {
+  data: () => ({
+    logo: 'http://image.showings.com.cn/logo.png'
+  })
+}
+</script>
+
+<style>
+  .avatar {
+  }
+</style>

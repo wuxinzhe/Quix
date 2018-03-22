@@ -1,0 +1,31 @@
+<import name="flex" src="../components/Flex"></import>
+<import name="divider" src="../components/Divider"></import>
+<import name="container" src="../components/Container"></import>
+<import name="wind-blank" src="../components/WindBlank"></import>
+<import name="white-space" src="../components/WhiteSpace"></import>
+<import name="example-page" src="../Widgets/ExamplePage"></import>
+
+<template>
+  <container>
+    <example-page title="Divider" name="分割线">
+      <white-space size="md"></white-space>
+      <wind-blank>
+        <flex align="center" direction="row">
+          <divider text="已经到底啦"></divider>
+        </flex>
+      </wind-blank>
+      <white-space size="md"></white-space>
+    </example-page>
+  </container>
+</template>
+
+<script>
+export default {
+  data: () => ({})
+}
+</script>
+
+<style>
+  .divider {
+  }
+</style>

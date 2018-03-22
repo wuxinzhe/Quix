@@ -1,0 +1,144 @@
+{
+  "package": "com.showings.quix",
+  "name": "Quix",
+  "versionName": "1.0.0",
+  "versionCode": "1",
+  "minPlatformVersion": "101",
+  "icon": "/Common/logo.png",
+  "features": [
+    {
+      "name": "system.prompt"
+    },
+    {
+      "name": "system.router"
+    },
+    {
+      "name": "system.shortcut"
+    }
+  ],
+  "permissions": [
+    {
+      "origin": "*"
+    }
+  ],
+  "config": {
+    "logLevel": "debug"
+  },
+  "router": {
+    "entry": "Index",
+    "pages": {
+      "Index": {
+        "component": "index"
+      },
+      "Flex": {
+        "component": "index"
+      },
+      "InputField": {
+        "component": "index"
+      },
+      "SwitchField": {
+        "component": "index"
+      },
+      "RadioField": {
+        "component": "index"
+      },
+      "SelectField": {
+        "component": "index"
+      },
+      "Modal": {
+        "component": "index"
+      },
+      "SliderField": {
+        "component": "index"
+      },
+      "List": {
+        "component": "index"
+      },
+      "WindBlank": {
+        "component": "index"
+      },
+      "WhiteSpace": {
+        "component": "index"
+      },
+      "Avatar": {
+        "component": "index"
+      },
+      "Container": {
+        "component": "index"
+      },
+      "TextareaField": {
+        "component": "index"
+      },
+      "Divider": {
+        "component": "index"
+      }
+    }
+  },
+  "display": {
+    "titleBarBackgroundColor": "#000",
+    "titleBarTextColor": "#fff",
+    "menu": true,
+    "pages": {
+      "Index": {
+        "titleBarText": "Quix",
+        "menu": false
+      },
+      "Flex": {
+        "titleBarText": "Flex",
+        "menu": false
+      },
+      "Container": {
+        "titleBarText": "Container",
+        "menu": false
+      },
+      "InputField": {
+        "titleBarText": "InputField",
+        "menu": false
+      },
+      "SwitchField": {
+        "titleBarText": "SwitchField",
+        "menu": false
+      },
+      "RadioField": {
+        "titleBarText": "RadioField",
+        "menu": false
+      },
+      "SelectField": {
+        "titleBarText": "SelectField",
+        "menu": false
+      },
+      "Modal": {
+        "titleBarText": "Modal",
+        "menu": false
+      },
+      "SliderField": {
+        "titleBarText": "SliderField",
+        "menu": false
+      },
+      "List": {
+        "titleBarText": "List",
+        "menu": false
+      },
+      "WindBlank": {
+        "titleBarText": "WindBlank",
+        "menu": false
+      },
+      "WhiteSpace": {
+        "titleBarText": "WhiteSpace",
+        "menu": false
+      },
+      "Avatar": {
+        "titleBarText": "Avatar",
+        "menu": false
+      },
+      "TextareaField": {
+        "titleBarText": "TextareaField",
+        "menu": false
+      },
+      "Divider": {
+        "titleBarText": "Divider",
+        "menu": false
+      }
+    }
+  }
+}

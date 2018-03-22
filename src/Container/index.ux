@@ -1,0 +1,24 @@
+<import name="container" src="../components/Container"></import>
+<import name="example-page" src="../Widgets/ExamplePage"></import>
+<import name="blocks" src="../components/Block"></import>
+
+<template>
+  <container>
+    <example-page title="Container" name="布局容器">
+      <container>
+        <blocks></blocks>
+      </container>
+    </example-page>
+  </container>
+</template>
+
+<script>
+export default {
+  data: () => ({})
+}
+</script>
+
+<style>
+  .container {
+  }
+</style>

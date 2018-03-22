@@ -1,0 +1,25 @@
+<import name="container" src="../components/Container"></import>
+<import name="wind-blank" src="../components/WindBlank"></import>
+<import name="blocks" src="../components/Block"></import>
+<import name="example-page" src="../Widgets/ExamplePage"></import>
+
+<template>
+  <container>
+    <example-page title="WindBlank" name="两翼留白">
+      <wind-blank>
+        <blocks></blocks>
+      </wind-blank>
+    </example-page>
+  </container>
+</template>
+
+<script>
+export default {
+  data: () => ({})
+}
+</script>
+
+<style>
+  .wind-blank {
+  }
+</style>

@@ -1,0 +1,65 @@
+<import name="cell-box" src="../components/CellBox"></import>
+<import name="cell" src="../components/Cell"></import>
+<import name="container" src="../components/Container"></import>
+<import name="white-space" src="../components/WhiteSpace"></import>
+<import name="avatar" src="../components/Avatar"></import>
+<import name="flex" src="../components/Flex"></import>
+<import name="divider" src="../components/Divider"></import>
+
+<template>
+  <container>
+    <white-space></white-space>
+    <avatar src="{{logo}}" size="md"></avatar>
+    <white-space></white-space>
+    <flex align="center" justify="center">
+      <text class="title">Quix</text>
+      <white-space></white-space>
+      <divider text="拼装你的快应用"></divider>
+    </flex>
+    <white-space></white-space>
+    <cell-box head="基本元素">
+      <cell label="Avatar" arrow="true" first="true" page="Avatar"></cell>
+      <cell label="Divider" arrow="true" page="Divider"></cell>
+    </cell-box>
+    <white-space></white-space>
+    <cell-box head="表单组件">
+      <cell label="Input" arrow="true" first="true" page="InputField"></cell>
+      <!--<cell label="Select" arrow="true" page="SelectField"></cell>-->
+      <!--<cell label="Cascader" arrow="true"></cell>-->
+      <cell label="Switch" arrow="true" page="SwitchField"></cell>
+      <cell label="Radio" arrow="true" page="RadioField"></cell>
+      <cell label="Slider" arrow="true" page="SliderField"></cell>
+      <cell label="Textarea" arrow="true" page="TextareaField"></cell>
+    </cell-box>
+    <white-space></white-space>
+    <cell-box head="布局组件">
+      <cell label="Container" arrow="true" first="true" page="Container"></cell>
+      <cell label="Flex" arrow="true" page="Flex"></cell>
+      <cell label="List" arrow="true" page="List"></cell>
+      <cell label="WhiteSpace" arrow="true" page="WhiteSpace"></cell>
+      <cell label="WindBlank" arrow="true" page="WindBlank"></cell>
+    </cell-box>
+    <white-space></white-space>
+    <cell-box head="交互组件">
+      <cell label="Modal" arrow="true" first="true" page="Modal"></cell>
+    </cell-box>
+    <white-space></white-space>
+  </container>
+</template>
+
+<script>
+export default {
+  data: () => ({
+    logo: 'http://image.showings.com.cn/logo.png'
+  })
+}
+</script>
+
+<style>
+  .index {
+  }
+
+  .title {
+    font-size: 50px;
+  }
+</style>

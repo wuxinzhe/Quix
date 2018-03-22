@@ -1,0 +1,40 @@
+<import name="radio-field" src="../components/RadioField"></import>
+<import name="cell-box" src="../components/CellBox"></import>
+<import name="container" src="../components/Container"></import>
+<import name="white-space" src="../components/WhiteSpace"></import>
+<import name="example-page" src="../Widgets/ExamplePage"></import>
+
+<template>
+  <container>
+    <example-page title="Radio" name="单项选择">
+      <white-space></white-space>
+      <cell-box head="{{head}}">
+        <radio-field first="true" value="1" options="{{options}}" @change="onChange"></radio-field>
+      </cell-box>
+    </example-page>
+  </container>
+</template>
+
+<script>
+export default {
+  data: () => ({
+    head: '你觉得快应用如何？',
+    options: [
+      {
+        id: 1,
+        label: 'Yes'
+      }, {
+        id: 2,
+        label: 'No'
+      }]
+  }),
+  onChange ({ detail: { value } }) {
+    console.log(value)
+  }
+}
+</script>
+
+<style>
+  .radio-field {
+  }
+</style>

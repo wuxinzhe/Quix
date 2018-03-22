@@ -1,0 +1,40 @@
+<import name="flex" src="../components/Flex"></import>
+<import name="blocks" src="../components/Block"></import>
+<import name="container" src="../components/Container"></import>
+<import name="wind-blank" src="../components/WindBlank"></import>
+<import name="white-space" src="../components/WhiteSpace"></import>
+<import name="example-page" src="../Widgets/ExamplePage"></import>
+
+<template>
+  <container>
+    <example-page title="Flex" name="弹性布局">
+      <white-space size="md"></white-space>
+      <wind-blank>
+        <flex align="center" direction="row">
+          <blocks></blocks>
+          <blocks></blocks>
+        </flex>
+        <flex align="center" direction="row">
+          <blocks></blocks>
+          <blocks></blocks>
+          <blocks></blocks>
+        </flex>
+        <flex align="center" direction="row">
+          <blocks></blocks>
+          <blocks></blocks>
+          <blocks></blocks>
+          <blocks></blocks>
+        </flex>
+      </wind-blank>
+    </example-page>
+  </container>
+</template>
+
+<script>
+export default {
+  data: () => ({})
+}
+</script>
+
+<style>
+</style>

@@ -1,0 +1,55 @@
+<template>
+  <div class='page-container'>
+    <div class='page-header'>
+      <text class='title'>{{title}}</text>
+    </div>
+    <div class='name'>
+      <text>{{name}}</text>
+    </div>
+    <slot/>
+  </div>
+</template>
+
+<script>
+export default {
+  props: ['name', 'title'],
+  data: () => ({})
+}
+</script>
+
+<style>
+  .page-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    background-color: #faf8fe;
+  }
+
+  .page-header {
+    display: flex;
+    align-items: center;
+    height: 100px;
+    width: 100%;
+    line-height: 100px;
+    justify-content: center;
+  }
+
+  .title {
+    padding: 10px 50px;
+    border: solid #dcdfe6;
+    border-bottom-width: 1px;
+    font-size: 50px;
+    color: #303133;
+  }
+
+  .name {
+    text-align: center;
+    font-size: 25px;
+    padding: 0 30px;
+    margin-bottom: 30px;
+    color: #909399;
+  }
+
+</style>

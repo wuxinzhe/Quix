@@ -1,0 +1,45 @@
+<import name="input-field" src="../components/InputField"></import>
+<import name="cell-box" src="../components/CellBox"></import>
+<import name="container" src="../components/Container"></import>
+<import name="white-space" src="../components/WhiteSpace"></import>
+<import name="example-page" src="../Widgets/ExamplePage"></import>
+
+<template>
+  <container>
+    <example-page title="InputField" name="文本输入">
+      <white-space></white-space>
+      <cell-box head="{{head}}">
+        <input-field label="用户名" first="true" value="{{username}}" oninput="onInput" onclear="onClear"></input-field>
+        <input-field label="密码" type="password" value="{{password}}" clearable="true"></input-field>
+        <input-field label="验证码" type="number" value="{{code}}">
+          <text class="code-link">获取验证码</text>
+        </input-field>
+      </cell-box>
+    </example-page>
+  </container>
+</template>
+
+<script>
+export default {
+  data: () => ({
+    head: '表单',
+    username: '',
+    password: '',
+    code: ''
+  }),
+  onInput ({ detail: { value } }) {
+    this.username = value
+  },
+  onClear () {
+  }
+}
+</script>
+
+<style>
+  .input-field {
+  }
+
+  .code-link {
+    color: #409185;
+  }
+</style>

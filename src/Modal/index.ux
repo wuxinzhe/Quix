@@ -1,0 +1,54 @@
+<import name="modal" src="../components/Modal"></import>
+<import name="switch-field" src="../components/SwitchField"></import>
+<import name="cell-box" src="../components/CellBox"></import>
+<import name="container" src="../components/Container"></import>
+<import name="white-space" src="../components/WhiteSpace"></import>
+<import name="cell" src="../components/Cell"></import>
+<import name="example-page" src="../Widgets/ExamplePage"></import>
+
+<template>
+  <container>
+    <example-page title="Model" name="提示窗口">
+      <white-space></white-space>
+      <cell-box head="{{head}}">
+        <cell label="大吉大利" extra="{{extra}}" first="true" onclick="onOpen"></cell>
+      </cell-box>
+      <modal visible="{{visible}}" onclose="onClose" message="{{message}}" onclick="onClick" footer-list="{{footer}}">
+      </modal>
+    </example-page>
+  </container>
+</template>
+
+<script>
+export default {
+  data: () => ({
+    head: '点击打开',
+    visible: false,
+    extra: 'Close',
+    message: '今晚吃鸡？',
+    footer: [
+      {
+        label: '不吃'
+      }, {
+        label: '吃',
+        color: '#409185'
+      }]
+  }),
+  onOpen () {
+    this.visible = true
+    this.extra = 'Open'
+  },
+  onClose () {
+    this.visible = false
+    this.extra = 'Close'
+  },
+  onClick ({ detail: { idx } }) {
+    console.log(idx)
+  }
+}
+</script>
+
+<style>
+  .modal {
+  }
+</style>

@@ -1,0 +1,30 @@
+<import name="container" src="../components/Container"></import>
+<import name="wind-blank" src="../components/WindBlank"></import>
+<import name="white-space" src="../components/WhiteSpace"></import>
+<import name="blocks" src="../components/Block"></import>
+<import name="example-page" src="../Widgets/ExamplePage"></import>
+
+<template>
+  <container>
+    <example-page title="WhiteSpace" name="上下留白">
+      <wind-blank>
+        <blocks></blocks>
+        <white-space></white-space>
+        <blocks></blocks>
+        <white-space></white-space>
+        <blocks></blocks>
+      </wind-blank>
+    </example-page>
+  </container>
+</template>
+
+<script>
+export default {
+  data: () => ({})
+}
+</script>
+
+<style>
+  .white-space {
+  }
+</style>

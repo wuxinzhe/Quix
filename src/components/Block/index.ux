@@ -1,0 +1,25 @@
+<template>
+  <div class="block">
+    <text>block</text>
+  </div>
+</template>
+
+<script>
+export default {}
+</script>
+
+<style>
+  .block {
+    flex: 1;
+    height: 80px;
+    background-color: #ebebef;
+    line-height: 80px;
+    color: #bbbbbb;
+    margin: 5px;
+  }
+
+  .block > text {
+    text-align: center;
+    width: 100%
+  }
+</style>

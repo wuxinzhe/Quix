@@ -1,0 +1,62 @@
+<import name="input-field" src="../components/InputField"></import>
+<import name="cell-box" src="../components/CellBox"></import>
+<import name="container" src="../components/Container"></import>
+<import name="white-space" src="../components/WhiteSpace"></import>
+<import name="switch-field" src="../components/SwitchField"></import>
+<import name="slider-field" src="../components/SliderField"></import>
+<import name="radio-field" src="../components/RadioField"></import>
+<import name="textarea-field" src="../components/TextareaField"></import>
+<import name="example-page" src="../Widgets/ExamplePage"></import>
+
+
+<template>
+  <container>
+    <example-page title="List" name="多功能列表">
+      <white-space></white-space>
+      <cell-box head="{{head}}">
+        <input-field label="用户名" first="true" value="{{username}}" onclear="onClear"></input-field>
+        <input-field label="密码" type="password" value="{{password}}" clearable="true"></input-field>
+        <input-field label="验证码" type="number" value="{{code}}">
+          <text class="code-link">获取验证码</text>
+        </input-field>
+        <switch-field label="是否打开" value="{{checked}}"></switch-field>
+        <slider-field label="音量" value="{{count}}" show-value="true"></slider-field>
+        <textarea-field label="多行文本"></textarea-field>
+      </cell-box>
+      <white-space></white-space>
+      <cell-box head="单选">
+        <radio-field first="true" value="1" options="{{options}}"></radio-field>
+      </cell-box>
+    </example-page>
+  </container>
+</template>
+
+<script>
+export default {
+  data: () => ({
+    head: '多功能列表',
+    username: '张三',
+    password: '123456',
+    code: '',
+    checked: true,
+    count: 60,
+    options: [
+      {
+        id: 1,
+        label: 'Yes'
+      }, {
+        id: 2,
+        label: 'No'
+      }]
+  })
+}
+</script>
+
+<style>
+  .list {
+  }
+
+  .code-link {
+    color: #409185;
+  }
+</style>
