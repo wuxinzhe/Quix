@@ -12,3 +12,6 @@
 ![107](http://image.showings.com.cn/5-showingsview)
 ![108](http://image.showings.com.cn/6-showingsview)
 ![109](http://image.showings.com.cn/7-showingsview)
+
+## 项目预览
+可以在根目录下 /dist/com.showings.quix.rpx 下载打包后的UI快应用。
