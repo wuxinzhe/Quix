@@ -15,3 +15,6 @@
 
 ## 项目预览
 可以在根目录下 /dist/com.showings.quix.rpx 下载打包后的UI快应用。
+
+## 欢迎一起讨论学习
+![110](http://image.showings.com.cn/tutoro-showingsview)
