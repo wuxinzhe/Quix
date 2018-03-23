@@ -5,8 +5,6 @@
 </template>
 
 <script>
-import { initProps } from '../../util'
-
 export default {
   props: ['size', 'src', 'alt'],
   propsDefault: {
@@ -15,7 +13,14 @@ export default {
   },
   data: () => ({}),
   onInit () {
-    initProps(this)
+    if (this._options.props && this._options.props.length) {
+      const { propsDefault } = this._options
+      this._options.props.forEach(prop => {
+        if (propsDefault.hasOwnProperty(prop)) {
+          this[prop] = this[prop] || propsDefault[prop]
+        }
+      })
+    }
   }
 }
 </script>
