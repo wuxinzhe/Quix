@@ -1,11 +1,20 @@
 {
-  "name": "Quix",
+  "name": "@showings_quix/quix",
   "version": "1.0.0",
   "subversion": {
     "toolkit": "0.0.26",
     "packager": "0.0.5"
   },
-  "description": "",
+  "description": "Quix是专为快应用设计的UI库",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wuxinzhe/Quix.git"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "author": "WuXinZhe",
+  "license": "MIT",
   "scripts": {
     "build": "cross-env NODE_PLATFORM=na NODE_PHASE=dv webpack --config ./node_modules/hap-tools/webpack.config.js",
     "release": "cross-env NODE_PLATFORM=na NODE_PHASE=ol webpack --config ./node_modules/hap-tools/webpack.config.js",
