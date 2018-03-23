@@ -1,6 +1,6 @@
 {
-  "name": "@showings_quix/avatar",
-  "version": "1.0.0",
+  "name": "@showings_quix/quix_avatar",
+  "version": "1.0.1",
   "description": "头像 - 快应用组件",
   "publishConfig": {
     "access": "public"
