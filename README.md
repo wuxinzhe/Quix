@@ -8,16 +8,15 @@
 - Quix UI ：[github.com/wuxinzhe/QuixUI.git](https://github.com/wuxinzhe/QuixUI.git)
 
 ## 项目截图
-![104](http://image.showings.com.cn/2-quix)
-![106](http://image.showings.com.cn/1-quix)
-![103](http://image.showings.com.cn/3-quix)
-![105](http://image.showings.com.cn/4-quix)
-![107](http://image.showings.com.cn/5-quix)
-![108](http://image.showings.com.cn/6-quix)
-![109](http://image.showings.com.cn/7-quix)
+![108](http://image.showings.com.cn/6-quix_pre)
+![106](http://image.showings.com.cn/1-quix_pre)
+![103](http://image.showings.com.cn/3-quix_pre)
+![105](http://image.showings.com.cn/4-quix_pre)
+![107](http://image.showings.com.cn/5-quix_pre)
+![109](http://image.showings.com.cn/7-quix_pre)
 
 ## 项目预览
 可以在根目录下 /dist/com.showings.quix.rpx 下载打包后的UI快应用。
 
 ## 欢迎一起讨论学习
-![110](http://image.showings.com.cn/tutoro-quix)
+![110](http://image.showings.com.cn/tutoro-quix_pre)
