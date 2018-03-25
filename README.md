@@ -8,7 +8,7 @@
 - Quix UI ：[github.com/wuxinzhe/QuixUI.git](https://github.com/wuxinzhe/QuixUI.git)
 
 ## 项目截图
-![108](http://image.showings.com.cn/6-pre)
+![108](http://image.showings.com.cn/6.png-pre)
 ![106](http://image.showings.com.cn/1-pre)
 ![103](http://image.showings.com.cn/3-pre)
 ![105](http://image.showings.com.cn/4-pre)
@@ -19,4 +19,4 @@
 可以在根目录下 /dist/com.showings.quix.rpx 下载打包后的UI快应用。
 
 ## 欢迎一起讨论学习
-![110](http://image.showings.com.cn/tutoro-quix_pre)
+![110](http://image.showings.com.cn/tutoro-pre)
