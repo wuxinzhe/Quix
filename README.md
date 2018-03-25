@@ -8,13 +8,13 @@
 - Quix UI ：[github.com/wuxinzhe/QuixUI.git](https://github.com/wuxinzhe/QuixUI.git)
 
 ## 项目截图
-![104](http://image.showings.com.cn/2-showingsview)
-![106](http://image.showings.com.cn/1-showingsview)
-![103](http://image.showings.com.cn/3-showingsview)
-![105](http://image.showings.com.cn/4-showingsview)
-![107](http://image.showings.com.cn/5-showingsview)
-![108](http://image.showings.com.cn/6-showingsview)
-![109](http://image.showings.com.cn/7-showingsview)
+![104](http://image.showings.com.cn/2)
+![106](http://image.showings.com.cn/1)
+![103](http://image.showings.com.cn/3)
+![105](http://image.showings.com.cn/4)
+![107](http://image.showings.com.cn/5)
+![108](http://image.showings.com.cn/6)
+![109](http://image.showings.com.cn/7)
 
 ## 项目预览
 可以在根目录下 /dist/com.showings.quix.rpx 下载打包后的UI快应用。
