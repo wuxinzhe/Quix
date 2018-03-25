@@ -43,19 +43,18 @@
 /******/ 	return __webpack_require__(0);
 /******/ })
 /************************************************************************/
-/******/ ({
-
-/***/ 0:
+/******/ ([
+/* 0 */
 /***/ function(module, exports, __webpack_require__) {
 
-	__webpack_require__(161)
-	__webpack_require__(137)
-	__webpack_require__(121)
-	__webpack_require__(117)
-	__webpack_require__(23)
-	var $app_template$ = __webpack_require__(91)
-	var $app_style$ = __webpack_require__(92)
-	var $app_script$ = __webpack_require__(93)
+	__webpack_require__(68)
+	__webpack_require__(42)
+	__webpack_require__(6)
+	__webpack_require__(1)
+	__webpack_require__(22)
+	var $app_template$ = __webpack_require__(86)
+	var $app_style$ = __webpack_require__(87)
+	var $app_script$ = __webpack_require__(88)
 	
 	$app_define$('@app-component/index', [], function($app_require$, $app_exports$, $app_module$){
 	     $app_script$($app_module$, $app_exports$, $app_require$)
@@ -70,8 +69,88 @@
 
 
 /***/ },
+/* 1 */
+/***/ function(module, exports, __webpack_require__) {
 
-/***/ 18:
+	var $app_template$ = __webpack_require__(2)
+	var $app_style$ = __webpack_require__(3)
+	var $app_script$ = __webpack_require__(4)
+	
+	$app_define$('@app-component/white-space', [], function($app_require$, $app_exports$, $app_module$){
+	     $app_script$($app_module$, $app_exports$, $app_require$)
+	     if ($app_exports$.__esModule && $app_exports$.default) {
+	            $app_module$.exports = $app_exports$.default
+	        }
+	     $app_module$.exports.template = $app_template$
+	     $app_module$.exports.style = $app_style$
+	})
+
+
+/***/ },
+/* 2 */
+/***/ function(module, exports) {
+
+	module.exports = {
+	  "type": "div",
+	  "attr": {},
+	  "classList": [
+	    "white-space"
+	  ],
+	  "style": {
+	    "height": function () {return (this.height) + 'px'}
+	  }
+	}
+
+/***/ },
+/* 3 */
+/***/ function(module, exports) {
+
+	module.exports = {
+	  ".white-space": {
+	    "display": "flex",
+	    "width": "100%"
+	  }
+	}
+
+/***/ },
+/* 4 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = function(module, exports, $app_require$){'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
+	var initProps = __webpack_require__(5);
+	
+	exports.default = {
+	    props: ['size'],
+	    propsDefault: {
+	        size: 'sm'
+	    },
+	    data: function data() {
+	        return {
+	            height: 40
+	        };
+	    },
+	    onInit: function onInit() {
+	        initProps(this);
+	        switch (this.size) {
+	            case 'sm':
+	                this.height = 30;
+	                break;
+	            case 'md':
+	                this.height = 50;
+	                break;
+	            case 'lg':
+	                this.height = 70;
+	                break;
+	        }
+	    }
+	};}
+
+/***/ },
+/* 5 */
 /***/ function(module, exports) {
 
 	module.exports = function (target) {
@@ -86,13 +165,98 @@
 	}
 
 /***/ },
-
-/***/ 23:
+/* 6 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var $app_template$ = __webpack_require__(24)
-	var $app_style$ = __webpack_require__(25)
-	var $app_script$ = __webpack_require__(26)
+	var $app_template$ = __webpack_require__(7)
+	var $app_style$ = __webpack_require__(8)
+	var $app_script$ = __webpack_require__(9)
+	
+	$app_define$('@app-component/container', [], function($app_require$, $app_exports$, $app_module$){
+	     $app_script$($app_module$, $app_exports$, $app_require$)
+	     if ($app_exports$.__esModule && $app_exports$.default) {
+	            $app_module$.exports = $app_exports$.default
+	        }
+	     $app_module$.exports.template = $app_template$
+	     $app_module$.exports.style = $app_style$
+	})
+
+
+/***/ },
+/* 7 */
+/***/ function(module, exports) {
+
+	module.exports = {
+	  "type": "div",
+	  "attr": {},
+	  "classList": [
+	    "container"
+	  ],
+	  "style": {
+	    "backgroundColor": function () {return this.bgColor}
+	  },
+	  "children": [
+	    {
+	      "type": "slot",
+	      "attr": {}
+	    }
+	  ]
+	}
+
+/***/ },
+/* 8 */
+/***/ function(module, exports) {
+
+	module.exports = {
+	  ".container": {
+	    "display": "flex",
+	    "width": "100%",
+	    "alignItems": "center",
+	    "flexDirection": "column",
+	    "justifyContent": "flex-start"
+	  }
+	}
+
+/***/ },
+/* 9 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = function(module, exports, $app_require$){'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	var initProps = __webpack_require__(5);
+	
+	exports.default = {
+	  props: ['bgColor'],
+	  propsDefault: {
+	    bgColor: '#faf7ff'
+	  },
+	  onInit: function onInit() {
+	    initProps(this);
+	  }
+	};}
+
+/***/ },
+/* 10 */,
+/* 11 */,
+/* 12 */,
+/* 13 */,
+/* 14 */,
+/* 15 */,
+/* 16 */,
+/* 17 */,
+/* 18 */,
+/* 19 */,
+/* 20 */,
+/* 21 */,
+/* 22 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var $app_template$ = __webpack_require__(23)
+	var $app_style$ = __webpack_require__(24)
+	var $app_script$ = __webpack_require__(25)
 	
 	$app_define$('@app-component/example-page', [], function($app_require$, $app_exports$, $app_module$){
 	     $app_script$($app_module$, $app_exports$, $app_require$)
@@ -105,8 +269,7 @@
 
 
 /***/ },
-
-/***/ 24:
+/* 23 */
 /***/ function(module, exports) {
 
 	module.exports = {
@@ -157,8 +320,7 @@
 	}
 
 /***/ },
-
-/***/ 25:
+/* 24 */
 /***/ function(module, exports) {
 
 	module.exports = {
@@ -205,8 +367,7 @@
 	}
 
 /***/ },
-
-/***/ 26:
+/* 25 */
 /***/ function(module, exports) {
 
 	module.exports = function(module, exports, $app_require$){'use strict';
@@ -222,284 +383,28 @@
 	};}
 
 /***/ },
-
-/***/ 91:
-/***/ function(module, exports) {
-
-	module.exports = {
-	  "type": "container",
-	  "attr": {},
-	  "children": [
-	    {
-	      "type": "example-page",
-	      "attr": {
-	        "title": "Radio",
-	        "name": "单项选择"
-	      },
-	      "children": [
-	        {
-	          "type": "white-space",
-	          "attr": {}
-	        },
-	        {
-	          "type": "cell-box",
-	          "attr": {
-	            "head": function () {return this.head}
-	          },
-	          "children": [
-	            {
-	              "type": "radio-field",
-	              "attr": {
-	                "first": "true",
-	                "value": "1",
-	                "options": function () {return this.options}
-	              },
-	              "events": {
-	                "change": "onChange"
-	              }
-	            }
-	          ]
-	        }
-	      ]
-	    }
-	  ]
-	}
-
-/***/ },
-
-/***/ 92:
-/***/ function(module, exports) {
-
-	module.exports = {}
-
-/***/ },
-
-/***/ 93:
-/***/ function(module, exports) {
-
-	module.exports = function(module, exports, $app_require$){'use strict';
-	
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-	
-	var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
-	
-	exports.default = {
-	  data: function data() {
-	    return {
-	      head: '你觉得快应用如何？',
-	      options: [{
-	        id: 1,
-	        label: 'Yes'
-	      }, {
-	        id: 2,
-	        label: 'No'
-	      }]
-	    };
-	  },
-	  onChange: function onChange(_ref) {
-	    var value = _ref.detail.value;
-	
-	    console.log(value);
-	  }
-	};
-	
-	
-	var moduleOwn = exports.default || module.exports;
-	var accessors = ['public', 'protected', 'private'];
-	
-	if (moduleOwn.data && accessors.some(function (acc) {
-	  return moduleOwn[acc];
-	})) {
-	  throw new Error('页面VM对象中的属性data不可与"' + accessors.join(',') + '"同时存在，请使用private替换data名称');
-	} else if (!moduleOwn.data) {
-	  moduleOwn.data = {};
-	  moduleOwn._descriptor = {};
-	  accessors.forEach(function (acc) {
-	    var accType = _typeof(moduleOwn[acc]);
-	    if (accType === 'object') {
-	      moduleOwn.data = Object.assign(moduleOwn.data, moduleOwn[acc]);
-	      for (var name in moduleOwn[acc]) {
-	        moduleOwn._descriptor[name] = { access: acc };
-	      }
-	    } else if (accType === 'function') {
-	      console.warn('页面VM对象中的属性' + acc + '的值不能是函数，请使用对象');
-	    }
-	  });
-	}}
-
-/***/ },
-
-/***/ 117:
+/* 26 */,
+/* 27 */,
+/* 28 */,
+/* 29 */,
+/* 30 */,
+/* 31 */,
+/* 32 */,
+/* 33 */,
+/* 34 */,
+/* 35 */,
+/* 36 */,
+/* 37 */,
+/* 38 */,
+/* 39 */,
+/* 40 */,
+/* 41 */,
+/* 42 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var $app_template$ = __webpack_require__(118)
-	var $app_style$ = __webpack_require__(119)
-	var $app_script$ = __webpack_require__(120)
-	
-	$app_define$('@app-component/white-space', [], function($app_require$, $app_exports$, $app_module$){
-	     $app_script$($app_module$, $app_exports$, $app_require$)
-	     if ($app_exports$.__esModule && $app_exports$.default) {
-	            $app_module$.exports = $app_exports$.default
-	        }
-	     $app_module$.exports.template = $app_template$
-	     $app_module$.exports.style = $app_style$
-	})
-
-
-/***/ },
-
-/***/ 118:
-/***/ function(module, exports) {
-
-	module.exports = {
-	  "type": "div",
-	  "attr": {},
-	  "classList": [
-	    "white-space"
-	  ],
-	  "style": {
-	    "height": function () {return (this.height) + 'px'}
-	  }
-	}
-
-/***/ },
-
-/***/ 119:
-/***/ function(module, exports) {
-
-	module.exports = {
-	  ".white-space": {
-	    "display": "flex",
-	    "width": "100%"
-	  }
-	}
-
-/***/ },
-
-/***/ 120:
-/***/ function(module, exports, __webpack_require__) {
-
-	module.exports = function(module, exports, $app_require$){'use strict';
-	
-	Object.defineProperty(exports, "__esModule", {
-	    value: true
-	});
-	var initProps = __webpack_require__(18);
-	
-	exports.default = {
-	    props: ['size'],
-	    propsDefault: {
-	        size: 'sm'
-	    },
-	    data: function data() {
-	        return {
-	            height: 40
-	        };
-	    },
-	    onInit: function onInit() {
-	        initProps(this);
-	        switch (this.size) {
-	            case 'sm':
-	                this.height = 30;
-	                break;
-	            case 'md':
-	                this.height = 50;
-	                break;
-	            case 'lg':
-	                this.height = 70;
-	                break;
-	        }
-	    }
-	};}
-
-/***/ },
-
-/***/ 121:
-/***/ function(module, exports, __webpack_require__) {
-
-	var $app_template$ = __webpack_require__(122)
-	var $app_style$ = __webpack_require__(123)
-	var $app_script$ = __webpack_require__(124)
-	
-	$app_define$('@app-component/container', [], function($app_require$, $app_exports$, $app_module$){
-	     $app_script$($app_module$, $app_exports$, $app_require$)
-	     if ($app_exports$.__esModule && $app_exports$.default) {
-	            $app_module$.exports = $app_exports$.default
-	        }
-	     $app_module$.exports.template = $app_template$
-	     $app_module$.exports.style = $app_style$
-	})
-
-
-/***/ },
-
-/***/ 122:
-/***/ function(module, exports) {
-
-	module.exports = {
-	  "type": "div",
-	  "attr": {},
-	  "classList": [
-	    "container"
-	  ],
-	  "style": {
-	    "backgroundColor": function () {return this.bgColor}
-	  },
-	  "children": [
-	    {
-	      "type": "slot",
-	      "attr": {}
-	    }
-	  ]
-	}
-
-/***/ },
-
-/***/ 123:
-/***/ function(module, exports) {
-
-	module.exports = {
-	  ".container": {
-	    "display": "flex",
-	    "width": "100%",
-	    "alignItems": "center",
-	    "flexDirection": "column",
-	    "justifyContent": "flex-start"
-	  }
-	}
-
-/***/ },
-
-/***/ 124:
-/***/ function(module, exports, __webpack_require__) {
-
-	module.exports = function(module, exports, $app_require$){'use strict';
-	
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-	var initProps = __webpack_require__(18);
-	
-	exports.default = {
-	  props: ['bgColor'],
-	  propsDefault: {
-	    bgColor: '#faf7ff'
-	  },
-	  onInit: function onInit() {
-	    initProps(this);
-	  }
-	};}
-
-/***/ },
-
-/***/ 137:
-/***/ function(module, exports, __webpack_require__) {
-
-	var $app_template$ = __webpack_require__(138)
-	var $app_style$ = __webpack_require__(139)
-	var $app_script$ = __webpack_require__(140)
+	var $app_template$ = __webpack_require__(43)
+	var $app_style$ = __webpack_require__(44)
+	var $app_script$ = __webpack_require__(45)
 	
 	$app_define$('@app-component/cell-box', [], function($app_require$, $app_exports$, $app_module$){
 	     $app_script$($app_module$, $app_exports$, $app_require$)
@@ -512,8 +417,7 @@
 
 
 /***/ },
-
-/***/ 138:
+/* 43 */
 /***/ function(module, exports) {
 
 	module.exports = {
@@ -555,8 +459,7 @@
 	}
 
 /***/ },
-
-/***/ 139:
+/* 44 */
 /***/ function(module, exports) {
 
 	module.exports = {
@@ -595,8 +498,7 @@
 	}
 
 /***/ },
-
-/***/ 140:
+/* 45 */
 /***/ function(module, exports) {
 
 	module.exports = function(module, exports, $app_require$){'use strict';
@@ -612,13 +514,34 @@
 	};}
 
 /***/ },
-
-/***/ 161:
+/* 46 */,
+/* 47 */,
+/* 48 */,
+/* 49 */,
+/* 50 */,
+/* 51 */,
+/* 52 */,
+/* 53 */,
+/* 54 */,
+/* 55 */,
+/* 56 */,
+/* 57 */,
+/* 58 */,
+/* 59 */,
+/* 60 */,
+/* 61 */,
+/* 62 */,
+/* 63 */,
+/* 64 */,
+/* 65 */,
+/* 66 */,
+/* 67 */,
+/* 68 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var $app_template$ = __webpack_require__(162)
-	var $app_style$ = __webpack_require__(163)
-	var $app_script$ = __webpack_require__(164)
+	var $app_template$ = __webpack_require__(69)
+	var $app_style$ = __webpack_require__(70)
+	var $app_script$ = __webpack_require__(71)
 	
 	$app_define$('@app-component/radio-field', [], function($app_require$, $app_exports$, $app_module$){
 	     $app_script$($app_module$, $app_exports$, $app_require$)
@@ -631,8 +554,7 @@
 
 
 /***/ },
-
-/***/ 162:
+/* 69 */
 /***/ function(module, exports) {
 
 	module.exports = {
@@ -713,8 +635,7 @@
 	}
 
 /***/ },
-
-/***/ 163:
+/* 70 */
 /***/ function(module, exports) {
 
 	module.exports = {
@@ -792,8 +713,7 @@
 	}
 
 /***/ },
-
-/***/ 164:
+/* 71 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = function(module, exports, $app_require$){'use strict';
@@ -801,7 +721,7 @@
 	Object.defineProperty(exports, "__esModule", {
 	  value: true
 	});
-	var initProps = __webpack_require__(18);
+	var initProps = __webpack_require__(5);
 	
 	exports.default = {
 	  props: ['options', 'first', 'value'],
@@ -825,9 +745,127 @@
 	  }
 	};}
 
-/***/ }
+/***/ },
+/* 72 */,
+/* 73 */,
+/* 74 */,
+/* 75 */,
+/* 76 */,
+/* 77 */,
+/* 78 */,
+/* 79 */,
+/* 80 */,
+/* 81 */,
+/* 82 */,
+/* 83 */,
+/* 84 */,
+/* 85 */,
+/* 86 */
+/***/ function(module, exports) {
 
-/******/ });
+	module.exports = {
+	  "type": "container",
+	  "attr": {},
+	  "children": [
+	    {
+	      "type": "example-page",
+	      "attr": {
+	        "title": "Radio",
+	        "name": "单项选择"
+	      },
+	      "children": [
+	        {
+	          "type": "white-space",
+	          "attr": {}
+	        },
+	        {
+	          "type": "cell-box",
+	          "attr": {
+	            "head": function () {return this.head}
+	          },
+	          "children": [
+	            {
+	              "type": "radio-field",
+	              "attr": {
+	                "first": "true",
+	                "value": "1",
+	                "options": function () {return this.options}
+	              },
+	              "events": {
+	                "change": "onChange"
+	              }
+	            }
+	          ]
+	        }
+	      ]
+	    }
+	  ]
+	}
+
+/***/ },
+/* 87 */
+/***/ function(module, exports) {
+
+	module.exports = {}
+
+/***/ },
+/* 88 */
+/***/ function(module, exports) {
+
+	module.exports = function(module, exports, $app_require$){'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	
+	var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
+	
+	exports.default = {
+	  data: function data() {
+	    return {
+	      head: '你觉得快应用如何？',
+	      options: [{
+	        id: 1,
+	        label: 'Yes'
+	      }, {
+	        id: 2,
+	        label: 'No'
+	      }]
+	    };
+	  },
+	  onChange: function onChange(_ref) {
+	    var value = _ref.detail.value;
+	
+	    console.log(value);
+	  }
+	};
+	
+	
+	var moduleOwn = exports.default || module.exports;
+	var accessors = ['public', 'protected', 'private'];
+	
+	if (moduleOwn.data && accessors.some(function (acc) {
+	  return moduleOwn[acc];
+	})) {
+	  throw new Error('页面VM对象中的属性data不可与"' + accessors.join(',') + '"同时存在，请使用private替换data名称');
+	} else if (!moduleOwn.data) {
+	  moduleOwn.data = {};
+	  moduleOwn._descriptor = {};
+	  accessors.forEach(function (acc) {
+	    var accType = _typeof(moduleOwn[acc]);
+	    if (accType === 'object') {
+	      moduleOwn.data = Object.assign(moduleOwn.data, moduleOwn[acc]);
+	      for (var name in moduleOwn[acc]) {
+	        moduleOwn._descriptor[name] = { access: acc };
+	      }
+	    } else if (accType === 'function') {
+	      console.warn('页面VM对象中的属性' + acc + '的值不能是函数，请使用对象');
+	    }
+	  });
+	}}
+
+/***/ }
+/******/ ]);
   };
   if (typeof window === "undefined") {
     return createPageHandler();

@@ -48,12 +48,12 @@
 /***/ 0:
 /***/ function(module, exports, __webpack_require__) {
 
-	__webpack_require__(121)
-	__webpack_require__(23)
-	__webpack_require__(30)
-	var $app_template$ = __webpack_require__(34)
-	var $app_style$ = __webpack_require__(35)
-	var $app_script$ = __webpack_require__(36)
+	__webpack_require__(6)
+	__webpack_require__(22)
+	__webpack_require__(112)
+	var $app_template$ = __webpack_require__(29)
+	var $app_style$ = __webpack_require__(30)
+	var $app_script$ = __webpack_require__(31)
 	
 	$app_define$('@app-component/index', [], function($app_require$, $app_exports$, $app_module$){
 	     $app_script$($app_module$, $app_exports$, $app_require$)
@@ -69,7 +69,7 @@
 
 /***/ },
 
-/***/ 18:
+/***/ 5:
 /***/ function(module, exports) {
 
 	module.exports = function (target) {
@@ -85,12 +85,90 @@
 
 /***/ },
 
-/***/ 23:
+/***/ 6:
 /***/ function(module, exports, __webpack_require__) {
 
-	var $app_template$ = __webpack_require__(24)
-	var $app_style$ = __webpack_require__(25)
-	var $app_script$ = __webpack_require__(26)
+	var $app_template$ = __webpack_require__(7)
+	var $app_style$ = __webpack_require__(8)
+	var $app_script$ = __webpack_require__(9)
+	
+	$app_define$('@app-component/container', [], function($app_require$, $app_exports$, $app_module$){
+	     $app_script$($app_module$, $app_exports$, $app_require$)
+	     if ($app_exports$.__esModule && $app_exports$.default) {
+	            $app_module$.exports = $app_exports$.default
+	        }
+	     $app_module$.exports.template = $app_template$
+	     $app_module$.exports.style = $app_style$
+	})
+
+
+/***/ },
+
+/***/ 7:
+/***/ function(module, exports) {
+
+	module.exports = {
+	  "type": "div",
+	  "attr": {},
+	  "classList": [
+	    "container"
+	  ],
+	  "style": {
+	    "backgroundColor": function () {return this.bgColor}
+	  },
+	  "children": [
+	    {
+	      "type": "slot",
+	      "attr": {}
+	    }
+	  ]
+	}
+
+/***/ },
+
+/***/ 8:
+/***/ function(module, exports) {
+
+	module.exports = {
+	  ".container": {
+	    "display": "flex",
+	    "width": "100%",
+	    "alignItems": "center",
+	    "flexDirection": "column",
+	    "justifyContent": "flex-start"
+	  }
+	}
+
+/***/ },
+
+/***/ 9:
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = function(module, exports, $app_require$){'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	var initProps = __webpack_require__(5);
+	
+	exports.default = {
+	  props: ['bgColor'],
+	  propsDefault: {
+	    bgColor: '#faf7ff'
+	  },
+	  onInit: function onInit() {
+	    initProps(this);
+	  }
+	};}
+
+/***/ },
+
+/***/ 22:
+/***/ function(module, exports, __webpack_require__) {
+
+	var $app_template$ = __webpack_require__(23)
+	var $app_style$ = __webpack_require__(24)
+	var $app_script$ = __webpack_require__(25)
 	
 	$app_define$('@app-component/example-page', [], function($app_require$, $app_exports$, $app_module$){
 	     $app_script$($app_module$, $app_exports$, $app_require$)
@@ -104,7 +182,7 @@
 
 /***/ },
 
-/***/ 24:
+/***/ 23:
 /***/ function(module, exports) {
 
 	module.exports = {
@@ -156,7 +234,7 @@
 
 /***/ },
 
-/***/ 25:
+/***/ 24:
 /***/ function(module, exports) {
 
 	module.exports = {
@@ -204,7 +282,7 @@
 
 /***/ },
 
-/***/ 26:
+/***/ 25:
 /***/ function(module, exports) {
 
 	module.exports = function(module, exports, $app_require$){'use strict';
@@ -221,100 +299,7 @@
 
 /***/ },
 
-/***/ 30:
-/***/ function(module, exports, __webpack_require__) {
-
-	var $app_template$ = __webpack_require__(31)
-	var $app_style$ = __webpack_require__(32)
-	var $app_script$ = __webpack_require__(33)
-	
-	$app_define$('@app-component/blocks', [], function($app_require$, $app_exports$, $app_module$){
-	     $app_script$($app_module$, $app_exports$, $app_require$)
-	     if ($app_exports$.__esModule && $app_exports$.default) {
-	            $app_module$.exports = $app_exports$.default
-	        }
-	     $app_module$.exports.template = $app_template$
-	     $app_module$.exports.style = $app_style$
-	})
-
-
-/***/ },
-
-/***/ 31:
-/***/ function(module, exports) {
-
-	module.exports = {
-	  "type": "div",
-	  "attr": {},
-	  "classList": [
-	    "block"
-	  ],
-	  "children": [
-	    {
-	      "type": "text",
-	      "attr": {
-	        "value": "block"
-	      }
-	    }
-	  ]
-	}
-
-/***/ },
-
-/***/ 32:
-/***/ function(module, exports) {
-
-	module.exports = {
-	  ".block": {
-	    "flex": 1,
-	    "height": "80px",
-	    "backgroundColor": "#ebebef",
-	    "lineHeight": "80px",
-	    "color": "#bbbbbb",
-	    "marginTop": "5px",
-	    "marginRight": "5px",
-	    "marginBottom": "5px",
-	    "marginLeft": "5px"
-	  },
-	  ".block > text": {
-	    "textAlign": "center",
-	    "width": "100%",
-	    "_meta": {
-	      "ruleDef": [
-	        {
-	          "t": "a",
-	          "n": "class",
-	          "i": false,
-	          "a": "element",
-	          "v": "block"
-	        },
-	        {
-	          "t": "child"
-	        },
-	        {
-	          "t": "t",
-	          "n": "text"
-	        }
-	      ]
-	    }
-	  }
-	}
-
-/***/ },
-
-/***/ 33:
-/***/ function(module, exports) {
-
-	module.exports = function(module, exports, $app_require$){"use strict";
-	
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-	exports.default = {};}
-
-/***/ },
-
-/***/ 34:
+/***/ 29:
 /***/ function(module, exports) {
 
 	module.exports = {
@@ -345,14 +330,14 @@
 
 /***/ },
 
-/***/ 35:
+/***/ 30:
 /***/ function(module, exports) {
 
 	module.exports = {}
 
 /***/ },
 
-/***/ 36:
+/***/ 31:
 /***/ function(module, exports) {
 
 	module.exports = function(module, exports, $app_require$){'use strict';
@@ -395,14 +380,14 @@
 
 /***/ },
 
-/***/ 121:
+/***/ 112:
 /***/ function(module, exports, __webpack_require__) {
 
-	var $app_template$ = __webpack_require__(122)
-	var $app_style$ = __webpack_require__(123)
-	var $app_script$ = __webpack_require__(124)
+	var $app_template$ = __webpack_require__(113)
+	var $app_style$ = __webpack_require__(114)
+	var $app_script$ = __webpack_require__(115)
 	
-	$app_define$('@app-component/container', [], function($app_require$, $app_exports$, $app_module$){
+	$app_define$('@app-component/blocks', [], function($app_require$, $app_exports$, $app_module$){
 	     $app_script$($app_module$, $app_exports$, $app_require$)
 	     if ($app_exports$.__esModule && $app_exports$.default) {
 	            $app_module$.exports = $app_exports$.default
@@ -414,62 +399,77 @@
 
 /***/ },
 
-/***/ 122:
+/***/ 113:
 /***/ function(module, exports) {
 
 	module.exports = {
 	  "type": "div",
 	  "attr": {},
 	  "classList": [
-	    "container"
+	    "block"
 	  ],
-	  "style": {
-	    "backgroundColor": function () {return this.bgColor}
-	  },
 	  "children": [
 	    {
-	      "type": "slot",
-	      "attr": {}
+	      "type": "text",
+	      "attr": {
+	        "value": "block"
+	      }
 	    }
 	  ]
 	}
 
 /***/ },
 
-/***/ 123:
+/***/ 114:
 /***/ function(module, exports) {
 
 	module.exports = {
-	  ".container": {
-	    "display": "flex",
+	  ".block": {
+	    "flex": 1,
+	    "height": "80px",
+	    "backgroundColor": "#ebebef",
+	    "lineHeight": "80px",
+	    "color": "#bbbbbb",
+	    "marginTop": "5px",
+	    "marginRight": "5px",
+	    "marginBottom": "5px",
+	    "marginLeft": "5px"
+	  },
+	  ".block > text": {
+	    "textAlign": "center",
 	    "width": "100%",
-	    "alignItems": "center",
-	    "flexDirection": "column",
-	    "justifyContent": "flex-start"
+	    "_meta": {
+	      "ruleDef": [
+	        {
+	          "t": "a",
+	          "n": "class",
+	          "i": false,
+	          "a": "element",
+	          "v": "block"
+	        },
+	        {
+	          "t": "child"
+	        },
+	        {
+	          "t": "t",
+	          "n": "text"
+	        }
+	      ]
+	    }
 	  }
 	}
 
 /***/ },
 
-/***/ 124:
-/***/ function(module, exports, __webpack_require__) {
+/***/ 115:
+/***/ function(module, exports) {
 
-	module.exports = function(module, exports, $app_require$){'use strict';
+	module.exports = function(module, exports, $app_require$){"use strict";
 	
 	Object.defineProperty(exports, "__esModule", {
 	  value: true
 	});
-	var initProps = __webpack_require__(18);
-	
-	exports.default = {
-	  props: ['bgColor'],
-	  propsDefault: {
-	    bgColor: '#faf7ff'
-	  },
-	  onInit: function onInit() {
-	    initProps(this);
-	  }
-	};}
+	exports.default = {};}
 
 /***/ }
 

@@ -48,13 +48,13 @@
 /***/ 0:
 /***/ function(module, exports, __webpack_require__) {
 
-	__webpack_require__(173)
-	__webpack_require__(137)
-	__webpack_require__(121)
-	__webpack_require__(117)
-	var $app_template$ = __webpack_require__(98)
-	var $app_style$ = __webpack_require__(99)
-	var $app_script$ = __webpack_require__(100)
+	__webpack_require__(89)
+	__webpack_require__(42)
+	__webpack_require__(6)
+	__webpack_require__(1)
+	var $app_template$ = __webpack_require__(93)
+	var $app_style$ = __webpack_require__(94)
+	var $app_script$ = __webpack_require__(95)
 	
 	$app_define$('@app-component/index', [], function($app_require$, $app_exports$, $app_module$){
 	     $app_script$($app_module$, $app_exports$, $app_require$)
@@ -70,124 +70,12 @@
 
 /***/ },
 
-/***/ 18:
-/***/ function(module, exports) {
-
-	module.exports = function (target) {
-	  if (target._options.props && target._options.props.length) {
-	    const { propsDefault } = target._options
-	    target._options.props.forEach(prop => {
-	      if (propsDefault.hasOwnProperty(prop)) {
-	        target[prop] = target[prop] || propsDefault[prop]
-	      }
-	    })
-	  }
-	}
-
-/***/ },
-
-/***/ 98:
-/***/ function(module, exports) {
-
-	module.exports = {
-	  "type": "container",
-	  "attr": {},
-	  "children": [
-	    {
-	      "type": "white-space",
-	      "attr": {}
-	    },
-	    {
-	      "type": "cell-box",
-	      "attr": {
-	        "head": function () {return this.head}
-	      },
-	      "children": [
-	        {
-	          "type": "select-field",
-	          "attr": {
-	            "label": "美食",
-	            "first": "true",
-	            "options": function () {return this.options},
-	            "title": function () {return this.title}
-	          }
-	        }
-	      ]
-	    }
-	  ]
-	}
-
-/***/ },
-
-/***/ 99:
-/***/ function(module, exports) {
-
-	module.exports = {}
-
-/***/ },
-
-/***/ 100:
-/***/ function(module, exports) {
-
-	module.exports = function(module, exports, $app_require$){'use strict';
-	
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-	
-	var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
-	
-	exports.default = {
-	  data: function data() {
-	    return {
-	      head: '请选择',
-	      title: '选择美食',
-	      options: [{
-	        id: 1,
-	        label: '蛋糕'
-	      }, {
-	        id: 2,
-	        label: '烧烤'
-	      }, {
-	        id: 3,
-	        label: '麻辣烫'
-	      }]
-	    };
-	  }
-	};
-	
-	
-	var moduleOwn = exports.default || module.exports;
-	var accessors = ['public', 'protected', 'private'];
-	
-	if (moduleOwn.data && accessors.some(function (acc) {
-	  return moduleOwn[acc];
-	})) {
-	  throw new Error('页面VM对象中的属性data不可与"' + accessors.join(',') + '"同时存在，请使用private替换data名称');
-	} else if (!moduleOwn.data) {
-	  moduleOwn.data = {};
-	  moduleOwn._descriptor = {};
-	  accessors.forEach(function (acc) {
-	    var accType = _typeof(moduleOwn[acc]);
-	    if (accType === 'object') {
-	      moduleOwn.data = Object.assign(moduleOwn.data, moduleOwn[acc]);
-	      for (var name in moduleOwn[acc]) {
-	        moduleOwn._descriptor[name] = { access: acc };
-	      }
-	    } else if (accType === 'function') {
-	      console.warn('页面VM对象中的属性' + acc + '的值不能是函数，请使用对象');
-	    }
-	  });
-	}}
-
-/***/ },
-
-/***/ 117:
+/***/ 1:
 /***/ function(module, exports, __webpack_require__) {
 
-	var $app_template$ = __webpack_require__(118)
-	var $app_style$ = __webpack_require__(119)
-	var $app_script$ = __webpack_require__(120)
+	var $app_template$ = __webpack_require__(2)
+	var $app_style$ = __webpack_require__(3)
+	var $app_script$ = __webpack_require__(4)
 	
 	$app_define$('@app-component/white-space', [], function($app_require$, $app_exports$, $app_module$){
 	     $app_script$($app_module$, $app_exports$, $app_require$)
@@ -201,7 +89,7 @@
 
 /***/ },
 
-/***/ 118:
+/***/ 2:
 /***/ function(module, exports) {
 
 	module.exports = {
@@ -217,7 +105,7 @@
 
 /***/ },
 
-/***/ 119:
+/***/ 3:
 /***/ function(module, exports) {
 
 	module.exports = {
@@ -229,7 +117,7 @@
 
 /***/ },
 
-/***/ 120:
+/***/ 4:
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = function(module, exports, $app_require$){'use strict';
@@ -237,7 +125,7 @@
 	Object.defineProperty(exports, "__esModule", {
 	    value: true
 	});
-	var initProps = __webpack_require__(18);
+	var initProps = __webpack_require__(5);
 	
 	exports.default = {
 	    props: ['size'],
@@ -267,12 +155,28 @@
 
 /***/ },
 
-/***/ 121:
+/***/ 5:
+/***/ function(module, exports) {
+
+	module.exports = function (target) {
+	  if (target._options.props && target._options.props.length) {
+	    const { propsDefault } = target._options
+	    target._options.props.forEach(prop => {
+	      if (propsDefault.hasOwnProperty(prop)) {
+	        target[prop] = target[prop] || propsDefault[prop]
+	      }
+	    })
+	  }
+	}
+
+/***/ },
+
+/***/ 6:
 /***/ function(module, exports, __webpack_require__) {
 
-	var $app_template$ = __webpack_require__(122)
-	var $app_style$ = __webpack_require__(123)
-	var $app_script$ = __webpack_require__(124)
+	var $app_template$ = __webpack_require__(7)
+	var $app_style$ = __webpack_require__(8)
+	var $app_script$ = __webpack_require__(9)
 	
 	$app_define$('@app-component/container', [], function($app_require$, $app_exports$, $app_module$){
 	     $app_script$($app_module$, $app_exports$, $app_require$)
@@ -286,7 +190,7 @@
 
 /***/ },
 
-/***/ 122:
+/***/ 7:
 /***/ function(module, exports) {
 
 	module.exports = {
@@ -308,7 +212,7 @@
 
 /***/ },
 
-/***/ 123:
+/***/ 8:
 /***/ function(module, exports) {
 
 	module.exports = {
@@ -323,7 +227,7 @@
 
 /***/ },
 
-/***/ 124:
+/***/ 9:
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = function(module, exports, $app_require$){'use strict';
@@ -331,7 +235,7 @@
 	Object.defineProperty(exports, "__esModule", {
 	  value: true
 	});
-	var initProps = __webpack_require__(18);
+	var initProps = __webpack_require__(5);
 	
 	exports.default = {
 	  props: ['bgColor'],
@@ -345,12 +249,12 @@
 
 /***/ },
 
-/***/ 137:
+/***/ 42:
 /***/ function(module, exports, __webpack_require__) {
 
-	var $app_template$ = __webpack_require__(138)
-	var $app_style$ = __webpack_require__(139)
-	var $app_script$ = __webpack_require__(140)
+	var $app_template$ = __webpack_require__(43)
+	var $app_style$ = __webpack_require__(44)
+	var $app_script$ = __webpack_require__(45)
 	
 	$app_define$('@app-component/cell-box', [], function($app_require$, $app_exports$, $app_module$){
 	     $app_script$($app_module$, $app_exports$, $app_require$)
@@ -364,7 +268,7 @@
 
 /***/ },
 
-/***/ 138:
+/***/ 43:
 /***/ function(module, exports) {
 
 	module.exports = {
@@ -407,7 +311,7 @@
 
 /***/ },
 
-/***/ 139:
+/***/ 44:
 /***/ function(module, exports) {
 
 	module.exports = {
@@ -447,7 +351,7 @@
 
 /***/ },
 
-/***/ 140:
+/***/ 45:
 /***/ function(module, exports) {
 
 	module.exports = function(module, exports, $app_require$){'use strict';
@@ -464,12 +368,12 @@
 
 /***/ },
 
-/***/ 169:
+/***/ 79:
 /***/ function(module, exports, __webpack_require__) {
 
-	var $app_template$ = __webpack_require__(170)
-	var $app_style$ = __webpack_require__(171)
-	var $app_script$ = __webpack_require__(172)
+	var $app_template$ = __webpack_require__(80)
+	var $app_style$ = __webpack_require__(81)
+	var $app_script$ = __webpack_require__(82)
 	
 	$app_define$('@app-component/modal', [], function($app_require$, $app_exports$, $app_module$){
 	     $app_script$($app_module$, $app_exports$, $app_require$)
@@ -483,7 +387,7 @@
 
 /***/ },
 
-/***/ 170:
+/***/ 80:
 /***/ function(module, exports) {
 
 	module.exports = {
@@ -590,7 +494,7 @@
 
 /***/ },
 
-/***/ 171:
+/***/ 81:
 /***/ function(module, exports) {
 
 	module.exports = {
@@ -735,7 +639,7 @@
 
 /***/ },
 
-/***/ 172:
+/***/ 82:
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = function(module, exports, $app_require$){'use strict';
@@ -743,7 +647,7 @@
 	Object.defineProperty(exports, "__esModule", {
 	  value: true
 	});
-	var initProps = __webpack_require__(18);
+	var initProps = __webpack_require__(5);
 	
 	exports.default = {
 	  props: ['visible', 'title', 'message', 'footerList'],
@@ -802,13 +706,13 @@
 
 /***/ },
 
-/***/ 173:
+/***/ 89:
 /***/ function(module, exports, __webpack_require__) {
 
-	__webpack_require__(169)
-	var $app_template$ = __webpack_require__(174)
-	var $app_style$ = __webpack_require__(175)
-	var $app_script$ = __webpack_require__(176)
+	__webpack_require__(79)
+	var $app_template$ = __webpack_require__(90)
+	var $app_style$ = __webpack_require__(91)
+	var $app_script$ = __webpack_require__(92)
 	
 	$app_define$('@app-component/select-field', [], function($app_require$, $app_exports$, $app_module$){
 	     $app_script$($app_module$, $app_exports$, $app_require$)
@@ -822,7 +726,7 @@
 
 /***/ },
 
-/***/ 174:
+/***/ 90:
 /***/ function(module, exports) {
 
 	module.exports = {
@@ -950,7 +854,7 @@
 
 /***/ },
 
-/***/ 175:
+/***/ 91:
 /***/ function(module, exports) {
 
 	module.exports = {
@@ -1124,7 +1028,7 @@
 
 /***/ },
 
-/***/ 176:
+/***/ 92:
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = function(module, exports, $app_require$){'use strict';
@@ -1132,7 +1036,7 @@
 	Object.defineProperty(exports, "__esModule", {
 	  value: true
 	});
-	var initProps = __webpack_require__(18);
+	var initProps = __webpack_require__(5);
 	
 	exports.default = {
 	  props: ['label', 'first', 'options', 'type', 'title'],
@@ -1186,6 +1090,102 @@
 	    console.log(newValue);
 	  }
 	};}
+
+/***/ },
+
+/***/ 93:
+/***/ function(module, exports) {
+
+	module.exports = {
+	  "type": "container",
+	  "attr": {},
+	  "children": [
+	    {
+	      "type": "white-space",
+	      "attr": {}
+	    },
+	    {
+	      "type": "cell-box",
+	      "attr": {
+	        "head": function () {return this.head}
+	      },
+	      "children": [
+	        {
+	          "type": "select-field",
+	          "attr": {
+	            "label": "美食",
+	            "first": "true",
+	            "options": function () {return this.options},
+	            "title": function () {return this.title}
+	          }
+	        }
+	      ]
+	    }
+	  ]
+	}
+
+/***/ },
+
+/***/ 94:
+/***/ function(module, exports) {
+
+	module.exports = {}
+
+/***/ },
+
+/***/ 95:
+/***/ function(module, exports) {
+
+	module.exports = function(module, exports, $app_require$){'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	
+	var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
+	
+	exports.default = {
+	  data: function data() {
+	    return {
+	      head: '请选择',
+	      title: '选择美食',
+	      options: [{
+	        id: 1,
+	        label: '蛋糕'
+	      }, {
+	        id: 2,
+	        label: '烧烤'
+	      }, {
+	        id: 3,
+	        label: '麻辣烫'
+	      }]
+	    };
+	  }
+	};
+	
+	
+	var moduleOwn = exports.default || module.exports;
+	var accessors = ['public', 'protected', 'private'];
+	
+	if (moduleOwn.data && accessors.some(function (acc) {
+	  return moduleOwn[acc];
+	})) {
+	  throw new Error('页面VM对象中的属性data不可与"' + accessors.join(',') + '"同时存在，请使用private替换data名称');
+	} else if (!moduleOwn.data) {
+	  moduleOwn.data = {};
+	  moduleOwn._descriptor = {};
+	  accessors.forEach(function (acc) {
+	    var accType = _typeof(moduleOwn[acc]);
+	    if (accType === 'object') {
+	      moduleOwn.data = Object.assign(moduleOwn.data, moduleOwn[acc]);
+	      for (var name in moduleOwn[acc]) {
+	        moduleOwn._descriptor[name] = { access: acc };
+	      }
+	    } else if (accType === 'function') {
+	      console.warn('页面VM对象中的属性' + acc + '的值不能是函数，请使用对象');
+	    }
+	  });
+	}}
 
 /***/ }
 
