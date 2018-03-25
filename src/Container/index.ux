@@ -1,4 +1,4 @@
-<import name="container" src="../components/Container"></import>
+<import name="container" src="../../node_modules/@showings_quix/quix_ui/Container"></import>
 <import name="example-page" src="../Widgets/ExamplePage"></import>
 <import name="blocks" src="../components/Block"></import>
 

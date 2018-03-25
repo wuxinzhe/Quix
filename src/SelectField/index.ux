@@ -1,7 +1,7 @@
-<import name="select-field" src="../components/SelectField"></import>
-<import name="cell-box" src="../components/CellBox"></import>
-<import name="container" src="../components/Container"></import>
-<import name="white-space" src="../components/WhiteSpace"></import>
+<import name="select-field" src="../../node_modules/@showings_quix/quix_ui/SelectField"></import>
+<import name="cell-box" src="../../node_modules/@showings_quix/quix_ui/CellBox"></import>
+<import name="container" src="../../node_modules/@showings_quix/quix_ui/Container"></import>
+<import name="white-space" src="../../node_modules/@showings_quix/quix_ui/WhiteSpace"></import>
 
 <template>
   <container>

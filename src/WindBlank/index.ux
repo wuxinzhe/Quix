@@ -1,5 +1,5 @@
-<import name="container" src="../components/Container"></import>
-<import name="wind-blank" src="../components/WindBlank"></import>
+<import name="container" src="../../node_modules/@showings_quix/quix_ui/Container"></import>
+<import name="wind-blank" src="../../node_modules/@showings_quix/quix_ui/WindBlank"></import>
 <import name="blocks" src="../components/Block"></import>
 <import name="example-page" src="../Widgets/ExamplePage"></import>
 

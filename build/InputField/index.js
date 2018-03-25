@@ -43,18 +43,19 @@
 /******/ 	return __webpack_require__(0);
 /******/ })
 /************************************************************************/
-/******/ ([
-/* 0 */
+/******/ ({
+
+/***/ 0:
 /***/ function(module, exports, __webpack_require__) {
 
-	__webpack_require__(57)
-	__webpack_require__(46)
-	__webpack_require__(6)
-	__webpack_require__(1)
-	__webpack_require__(22)
-	var $app_template$ = __webpack_require__(61)
-	var $app_style$ = __webpack_require__(62)
-	var $app_script$ = __webpack_require__(63)
+	__webpack_require__(149)
+	__webpack_require__(137)
+	__webpack_require__(121)
+	__webpack_require__(117)
+	__webpack_require__(23)
+	var $app_template$ = __webpack_require__(62)
+	var $app_style$ = __webpack_require__(63)
+	var $app_script$ = __webpack_require__(64)
 	
 	$app_define$('@app-component/index', [], function($app_require$, $app_exports$, $app_module$){
 	     $app_script$($app_module$, $app_exports$, $app_require$)
@@ -69,203 +70,29 @@
 
 
 /***/ },
-/* 1 */
-/***/ function(module, exports, __webpack_require__) {
 
-	var $app_template$ = __webpack_require__(2)
-	var $app_style$ = __webpack_require__(3)
-	var $app_script$ = __webpack_require__(4)
-	
-	$app_define$('@app-component/white-space', [], function($app_require$, $app_exports$, $app_module$){
-	     $app_script$($app_module$, $app_exports$, $app_require$)
-	     if ($app_exports$.__esModule && $app_exports$.default) {
-	            $app_module$.exports = $app_exports$.default
-	        }
-	     $app_module$.exports.template = $app_template$
-	     $app_module$.exports.style = $app_style$
-	})
-
-
-/***/ },
-/* 2 */
+/***/ 18:
 /***/ function(module, exports) {
 
-	module.exports = {
-	  "type": "div",
-	  "attr": {},
-	  "classList": [
-	    "white-space"
-	  ],
-	  "style": {
-	    "height": function () {return (this.height) + 'px'}
-	  }
-	}
-
-/***/ },
-/* 3 */
-/***/ function(module, exports) {
-
-	module.exports = {
-	  ".white-space": {
-	    "display": "flex",
-	    "width": "100%"
-	  }
-	}
-
-/***/ },
-/* 4 */
-/***/ function(module, exports, __webpack_require__) {
-
-	module.exports = function(module, exports, $app_require$){'use strict';
-	
-	Object.defineProperty(exports, "__esModule", {
-	    value: true
-	});
-	
-	var _util = __webpack_require__(5);
-	
-	exports.default = {
-	    props: ['size'],
-	    propsDefault: {
-	        size: 'sm'
-	    },
-	    data: function data() {
-	        return {
-	            height: 40
-	        };
-	    },
-	    onInit: function onInit() {
-	        (0, _util.initProps)(this);
-	        switch (this.size) {
-	            case 'sm':
-	                this.height = 30;
-	                break;
-	            case 'md':
-	                this.height = 50;
-	                break;
-	            case 'lg':
-	                this.height = 70;
-	                break;
-	        }
-	    }
-	};}
-
-/***/ },
-/* 5 */
-/***/ function(module, exports) {
-
-	"use strict";
-	
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-	exports.initProps = initProps;
-	function initProps(target) {
+	module.exports = function (target) {
 	  if (target._options.props && target._options.props.length) {
-	    var propsDefault = target._options.propsDefault;
-	
-	    target._options.props.forEach(function (prop) {
+	    const { propsDefault } = target._options
+	    target._options.props.forEach(prop => {
 	      if (propsDefault.hasOwnProperty(prop)) {
-	        target[prop] = target[prop] || propsDefault[prop];
+	        target[prop] = target[prop] || propsDefault[prop]
 	      }
-	    });
+	    })
 	  }
 	}
 
 /***/ },
-/* 6 */
+
+/***/ 23:
 /***/ function(module, exports, __webpack_require__) {
 
-	var $app_template$ = __webpack_require__(7)
-	var $app_style$ = __webpack_require__(8)
-	var $app_script$ = __webpack_require__(9)
-	
-	$app_define$('@app-component/container', [], function($app_require$, $app_exports$, $app_module$){
-	     $app_script$($app_module$, $app_exports$, $app_require$)
-	     if ($app_exports$.__esModule && $app_exports$.default) {
-	            $app_module$.exports = $app_exports$.default
-	        }
-	     $app_module$.exports.template = $app_template$
-	     $app_module$.exports.style = $app_style$
-	})
-
-
-/***/ },
-/* 7 */
-/***/ function(module, exports) {
-
-	module.exports = {
-	  "type": "div",
-	  "attr": {},
-	  "classList": [
-	    "container"
-	  ],
-	  "style": {
-	    "backgroundColor": function () {return this.bgColor}
-	  },
-	  "children": [
-	    {
-	      "type": "slot",
-	      "attr": {}
-	    }
-	  ]
-	}
-
-/***/ },
-/* 8 */
-/***/ function(module, exports) {
-
-	module.exports = {
-	  ".container": {
-	    "display": "flex",
-	    "width": "100%",
-	    "alignItems": "center",
-	    "flexDirection": "column",
-	    "justifyContent": "flex-start"
-	  }
-	}
-
-/***/ },
-/* 9 */
-/***/ function(module, exports, __webpack_require__) {
-
-	module.exports = function(module, exports, $app_require$){'use strict';
-	
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-	
-	var _util = __webpack_require__(5);
-	
-	exports.default = {
-	  props: ['bgColor'],
-	  propsDefault: {
-	    bgColor: '#faf7ff'
-	  },
-	  onInit: function onInit() {
-	    (0, _util.initProps)(this);
-	  }
-	};}
-
-/***/ },
-/* 10 */,
-/* 11 */,
-/* 12 */,
-/* 13 */,
-/* 14 */,
-/* 15 */,
-/* 16 */,
-/* 17 */,
-/* 18 */,
-/* 19 */,
-/* 20 */,
-/* 21 */,
-/* 22 */
-/***/ function(module, exports, __webpack_require__) {
-
-	var $app_template$ = __webpack_require__(23)
-	var $app_style$ = __webpack_require__(24)
-	var $app_script$ = __webpack_require__(25)
+	var $app_template$ = __webpack_require__(24)
+	var $app_style$ = __webpack_require__(25)
+	var $app_script$ = __webpack_require__(26)
 	
 	$app_define$('@app-component/example-page', [], function($app_require$, $app_exports$, $app_module$){
 	     $app_script$($app_module$, $app_exports$, $app_require$)
@@ -278,7 +105,8 @@
 
 
 /***/ },
-/* 23 */
+
+/***/ 24:
 /***/ function(module, exports) {
 
 	module.exports = {
@@ -329,7 +157,8 @@
 	}
 
 /***/ },
-/* 24 */
+
+/***/ 25:
 /***/ function(module, exports) {
 
 	module.exports = {
@@ -376,7 +205,8 @@
 	}
 
 /***/ },
-/* 25 */
+
+/***/ 26:
 /***/ function(module, exports) {
 
 	module.exports = function(module, exports, $app_require$){'use strict';
@@ -392,32 +222,314 @@
 	};}
 
 /***/ },
-/* 26 */,
-/* 27 */,
-/* 28 */,
-/* 29 */,
-/* 30 */,
-/* 31 */,
-/* 32 */,
-/* 33 */,
-/* 34 */,
-/* 35 */,
-/* 36 */,
-/* 37 */,
-/* 38 */,
-/* 39 */,
-/* 40 */,
-/* 41 */,
-/* 42 */,
-/* 43 */,
-/* 44 */,
-/* 45 */,
-/* 46 */
+
+/***/ 62:
+/***/ function(module, exports) {
+
+	module.exports = {
+	  "type": "container",
+	  "attr": {},
+	  "children": [
+	    {
+	      "type": "example-page",
+	      "attr": {
+	        "title": "InputField",
+	        "name": "文本输入"
+	      },
+	      "children": [
+	        {
+	          "type": "white-space",
+	          "attr": {}
+	        },
+	        {
+	          "type": "cell-box",
+	          "attr": {
+	            "head": function () {return this.head}
+	          },
+	          "children": [
+	            {
+	              "type": "input-field",
+	              "attr": {
+	                "label": "用户名",
+	                "first": "true",
+	                "value": function () {return this.username}
+	              },
+	              "events": {
+	                "input": "onInput",
+	                "clear": "onClear"
+	              }
+	            },
+	            {
+	              "type": "input-field",
+	              "attr": {
+	                "label": "密码",
+	                "type": "password",
+	                "value": function () {return this.password},
+	                "clearable": "true"
+	              }
+	            },
+	            {
+	              "type": "input-field",
+	              "attr": {
+	                "label": "验证码",
+	                "type": "number",
+	                "value": function () {return this.code}
+	              },
+	              "children": [
+	                {
+	                  "type": "text",
+	                  "attr": {
+	                    "value": "获取验证码"
+	                  },
+	                  "classList": [
+	                    "code-link"
+	                  ]
+	                }
+	              ]
+	            }
+	          ]
+	        }
+	      ]
+	    }
+	  ]
+	}
+
+/***/ },
+
+/***/ 63:
+/***/ function(module, exports) {
+
+	module.exports = {
+	  ".code-link": {
+	    "color": "#409185"
+	  }
+	}
+
+/***/ },
+
+/***/ 64:
+/***/ function(module, exports) {
+
+	module.exports = function(module, exports, $app_require$){'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	
+	var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
+	
+	exports.default = {
+	  data: function data() {
+	    return {
+	      head: '表单',
+	      username: '',
+	      password: '',
+	      code: ''
+	    };
+	  },
+	  onInput: function onInput(_ref) {
+	    var value = _ref.detail.value;
+	
+	    this.username = value;
+	  },
+	  onClear: function onClear() {}
+	};
+	
+	
+	var moduleOwn = exports.default || module.exports;
+	var accessors = ['public', 'protected', 'private'];
+	
+	if (moduleOwn.data && accessors.some(function (acc) {
+	  return moduleOwn[acc];
+	})) {
+	  throw new Error('页面VM对象中的属性data不可与"' + accessors.join(',') + '"同时存在，请使用private替换data名称');
+	} else if (!moduleOwn.data) {
+	  moduleOwn.data = {};
+	  moduleOwn._descriptor = {};
+	  accessors.forEach(function (acc) {
+	    var accType = _typeof(moduleOwn[acc]);
+	    if (accType === 'object') {
+	      moduleOwn.data = Object.assign(moduleOwn.data, moduleOwn[acc]);
+	      for (var name in moduleOwn[acc]) {
+	        moduleOwn._descriptor[name] = { access: acc };
+	      }
+	    } else if (accType === 'function') {
+	      console.warn('页面VM对象中的属性' + acc + '的值不能是函数，请使用对象');
+	    }
+	  });
+	}}
+
+/***/ },
+
+/***/ 117:
 /***/ function(module, exports, __webpack_require__) {
 
-	var $app_template$ = __webpack_require__(47)
-	var $app_style$ = __webpack_require__(48)
-	var $app_script$ = __webpack_require__(49)
+	var $app_template$ = __webpack_require__(118)
+	var $app_style$ = __webpack_require__(119)
+	var $app_script$ = __webpack_require__(120)
+	
+	$app_define$('@app-component/white-space', [], function($app_require$, $app_exports$, $app_module$){
+	     $app_script$($app_module$, $app_exports$, $app_require$)
+	     if ($app_exports$.__esModule && $app_exports$.default) {
+	            $app_module$.exports = $app_exports$.default
+	        }
+	     $app_module$.exports.template = $app_template$
+	     $app_module$.exports.style = $app_style$
+	})
+
+
+/***/ },
+
+/***/ 118:
+/***/ function(module, exports) {
+
+	module.exports = {
+	  "type": "div",
+	  "attr": {},
+	  "classList": [
+	    "white-space"
+	  ],
+	  "style": {
+	    "height": function () {return (this.height) + 'px'}
+	  }
+	}
+
+/***/ },
+
+/***/ 119:
+/***/ function(module, exports) {
+
+	module.exports = {
+	  ".white-space": {
+	    "display": "flex",
+	    "width": "100%"
+	  }
+	}
+
+/***/ },
+
+/***/ 120:
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = function(module, exports, $app_require$){'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
+	var initProps = __webpack_require__(18);
+	
+	exports.default = {
+	    props: ['size'],
+	    propsDefault: {
+	        size: 'sm'
+	    },
+	    data: function data() {
+	        return {
+	            height: 40
+	        };
+	    },
+	    onInit: function onInit() {
+	        initProps(this);
+	        switch (this.size) {
+	            case 'sm':
+	                this.height = 30;
+	                break;
+	            case 'md':
+	                this.height = 50;
+	                break;
+	            case 'lg':
+	                this.height = 70;
+	                break;
+	        }
+	    }
+	};}
+
+/***/ },
+
+/***/ 121:
+/***/ function(module, exports, __webpack_require__) {
+
+	var $app_template$ = __webpack_require__(122)
+	var $app_style$ = __webpack_require__(123)
+	var $app_script$ = __webpack_require__(124)
+	
+	$app_define$('@app-component/container', [], function($app_require$, $app_exports$, $app_module$){
+	     $app_script$($app_module$, $app_exports$, $app_require$)
+	     if ($app_exports$.__esModule && $app_exports$.default) {
+	            $app_module$.exports = $app_exports$.default
+	        }
+	     $app_module$.exports.template = $app_template$
+	     $app_module$.exports.style = $app_style$
+	})
+
+
+/***/ },
+
+/***/ 122:
+/***/ function(module, exports) {
+
+	module.exports = {
+	  "type": "div",
+	  "attr": {},
+	  "classList": [
+	    "container"
+	  ],
+	  "style": {
+	    "backgroundColor": function () {return this.bgColor}
+	  },
+	  "children": [
+	    {
+	      "type": "slot",
+	      "attr": {}
+	    }
+	  ]
+	}
+
+/***/ },
+
+/***/ 123:
+/***/ function(module, exports) {
+
+	module.exports = {
+	  ".container": {
+	    "display": "flex",
+	    "width": "100%",
+	    "alignItems": "center",
+	    "flexDirection": "column",
+	    "justifyContent": "flex-start"
+	  }
+	}
+
+/***/ },
+
+/***/ 124:
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = function(module, exports, $app_require$){'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	var initProps = __webpack_require__(18);
+	
+	exports.default = {
+	  props: ['bgColor'],
+	  propsDefault: {
+	    bgColor: '#faf7ff'
+	  },
+	  onInit: function onInit() {
+	    initProps(this);
+	  }
+	};}
+
+/***/ },
+
+/***/ 137:
+/***/ function(module, exports, __webpack_require__) {
+
+	var $app_template$ = __webpack_require__(138)
+	var $app_style$ = __webpack_require__(139)
+	var $app_script$ = __webpack_require__(140)
 	
 	$app_define$('@app-component/cell-box', [], function($app_require$, $app_exports$, $app_module$){
 	     $app_script$($app_module$, $app_exports$, $app_require$)
@@ -430,7 +542,8 @@
 
 
 /***/ },
-/* 47 */
+
+/***/ 138:
 /***/ function(module, exports) {
 
 	module.exports = {
@@ -472,7 +585,8 @@
 	}
 
 /***/ },
-/* 48 */
+
+/***/ 139:
 /***/ function(module, exports) {
 
 	module.exports = {
@@ -511,7 +625,8 @@
 	}
 
 /***/ },
-/* 49 */
+
+/***/ 140:
 /***/ function(module, exports) {
 
 	module.exports = function(module, exports, $app_require$){'use strict';
@@ -527,19 +642,13 @@
 	};}
 
 /***/ },
-/* 50 */,
-/* 51 */,
-/* 52 */,
-/* 53 */,
-/* 54 */,
-/* 55 */,
-/* 56 */,
-/* 57 */
+
+/***/ 149:
 /***/ function(module, exports, __webpack_require__) {
 
-	var $app_template$ = __webpack_require__(58)
-	var $app_style$ = __webpack_require__(59)
-	var $app_script$ = __webpack_require__(60)
+	var $app_template$ = __webpack_require__(150)
+	var $app_style$ = __webpack_require__(151)
+	var $app_script$ = __webpack_require__(152)
 	
 	$app_define$('@app-component/input-field', [], function($app_require$, $app_exports$, $app_module$){
 	     $app_script$($app_module$, $app_exports$, $app_require$)
@@ -552,7 +661,8 @@
 
 
 /***/ },
-/* 58 */
+
+/***/ 150:
 /***/ function(module, exports) {
 
 	module.exports = {
@@ -637,7 +747,8 @@
 	}
 
 /***/ },
-/* 59 */
+
+/***/ 151:
 /***/ function(module, exports) {
 
 	module.exports = {
@@ -715,7 +826,8 @@
 	}
 
 /***/ },
-/* 60 */
+
+/***/ 152:
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = function(module, exports, $app_require$){'use strict';
@@ -723,8 +835,7 @@
 	Object.defineProperty(exports, "__esModule", {
 	  value: true
 	});
-	
-	var _util = __webpack_require__(5);
+	var initProps = __webpack_require__(18);
 	
 	exports.default = {
 	  props: ['first', 'label', 'placeholder', 'type', 'value', 'clearable'],
@@ -742,7 +853,7 @@
 	    };
 	  },
 	  onInit: function onInit() {
-	    (0, _util.initProps)(this);
+	    initProps(this);
 	    this.inputValue = this.value;
 	  },
 	  onInput: function onInput(_ref) {
@@ -759,143 +870,9 @@
 	  }
 	};}
 
-/***/ },
-/* 61 */
-/***/ function(module, exports) {
-
-	module.exports = {
-	  "type": "container",
-	  "attr": {},
-	  "children": [
-	    {
-	      "type": "example-page",
-	      "attr": {
-	        "title": "InputField",
-	        "name": "文本输入"
-	      },
-	      "children": [
-	        {
-	          "type": "white-space",
-	          "attr": {}
-	        },
-	        {
-	          "type": "cell-box",
-	          "attr": {
-	            "head": function () {return this.head}
-	          },
-	          "children": [
-	            {
-	              "type": "input-field",
-	              "attr": {
-	                "label": "用户名",
-	                "first": "true",
-	                "value": function () {return this.username}
-	              },
-	              "events": {
-	                "input": "onInput",
-	                "clear": "onClear"
-	              }
-	            },
-	            {
-	              "type": "input-field",
-	              "attr": {
-	                "label": "密码",
-	                "type": "password",
-	                "value": function () {return this.password},
-	                "clearable": "true"
-	              }
-	            },
-	            {
-	              "type": "input-field",
-	              "attr": {
-	                "label": "验证码",
-	                "type": "number",
-	                "value": function () {return this.code}
-	              },
-	              "children": [
-	                {
-	                  "type": "text",
-	                  "attr": {
-	                    "value": "获取验证码"
-	                  },
-	                  "classList": [
-	                    "code-link"
-	                  ]
-	                }
-	              ]
-	            }
-	          ]
-	        }
-	      ]
-	    }
-	  ]
-	}
-
-/***/ },
-/* 62 */
-/***/ function(module, exports) {
-
-	module.exports = {
-	  ".code-link": {
-	    "color": "#409185"
-	  }
-	}
-
-/***/ },
-/* 63 */
-/***/ function(module, exports) {
-
-	module.exports = function(module, exports, $app_require$){'use strict';
-	
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-	
-	var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
-	
-	exports.default = {
-	  data: function data() {
-	    return {
-	      head: '表单',
-	      username: '',
-	      password: '',
-	      code: ''
-	    };
-	  },
-	  onInput: function onInput(_ref) {
-	    var value = _ref.detail.value;
-	
-	    this.username = value;
-	  },
-	  onClear: function onClear() {}
-	};
-	
-	
-	var moduleOwn = exports.default || module.exports;
-	var accessors = ['public', 'protected', 'private'];
-	
-	if (moduleOwn.data && accessors.some(function (acc) {
-	  return moduleOwn[acc];
-	})) {
-	  throw new Error('页面VM对象中的属性data不可与"' + accessors.join(',') + '"同时存在，请使用private替换data名称');
-	} else if (!moduleOwn.data) {
-	  moduleOwn.data = {};
-	  moduleOwn._descriptor = {};
-	  accessors.forEach(function (acc) {
-	    var accType = _typeof(moduleOwn[acc]);
-	    if (accType === 'object') {
-	      moduleOwn.data = Object.assign(moduleOwn.data, moduleOwn[acc]);
-	      for (var name in moduleOwn[acc]) {
-	        moduleOwn._descriptor[name] = { access: acc };
-	      }
-	    } else if (accType === 'function') {
-	      console.warn('页面VM对象中的属性' + acc + '的值不能是函数，请使用对象');
-	    }
-	  });
-	}}
-
 /***/ }
-/******/ ]);
+
+/******/ });
   };
   if (typeof window === "undefined") {
     return createPageHandler();
