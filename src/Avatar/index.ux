@@ -1,4 +1,5 @@
 <import name="avatar" src="../../node_modules/@showings_quix/quix_ui/Avatar"></import>
+<!--<import name="avatar" src="../Widgets/Avatar"></import>-->
 <import name="white-space" src="../../node_modules/@showings_quix/quix_ui/WhiteSpace"></import>
 <import name="container" src="../../node_modules/@showings_quix/quix_ui/Container"></import>
 <import name="wind-blank" src="../../node_modules/@showings_quix/quix_ui/WindBlank"></import>

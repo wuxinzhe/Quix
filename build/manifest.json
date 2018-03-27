@@ -71,6 +71,9 @@
       },
       "Divider": {
         "component": "index"
+      },
+      "Mask": {
+        "component": "index"
       }
     }
   },
@@ -137,6 +140,10 @@
       },
       "Divider": {
         "titleBarText": "Divider",
+        "menu": false
+      },
+      "Mask": {
+        "titleBarText": "Mask",
         "menu": false
       }
     }

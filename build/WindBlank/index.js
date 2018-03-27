@@ -48,13 +48,13 @@
 /***/ 0:
 /***/ function(module, exports, __webpack_require__) {
 
-	__webpack_require__(6)
-	__webpack_require__(10)
-	__webpack_require__(112)
-	__webpack_require__(22)
-	var $app_template$ = __webpack_require__(108)
-	var $app_style$ = __webpack_require__(109)
-	var $app_script$ = __webpack_require__(110)
+	__webpack_require__(15)
+	__webpack_require__(19)
+	__webpack_require__(34)
+	__webpack_require__(27)
+	var $app_template$ = __webpack_require__(128)
+	var $app_style$ = __webpack_require__(129)
+	var $app_script$ = __webpack_require__(130)
 	
 	$app_define$('@app-component/index', [], function($app_require$, $app_exports$, $app_module$){
 	     $app_script$($app_module$, $app_exports$, $app_require$)
@@ -70,7 +70,7 @@
 
 /***/ },
 
-/***/ 5:
+/***/ 14:
 /***/ function(module, exports) {
 
 	module.exports = function (target) {
@@ -86,12 +86,12 @@
 
 /***/ },
 
-/***/ 6:
+/***/ 15:
 /***/ function(module, exports, __webpack_require__) {
 
-	var $app_template$ = __webpack_require__(7)
-	var $app_style$ = __webpack_require__(8)
-	var $app_script$ = __webpack_require__(9)
+	var $app_template$ = __webpack_require__(16)
+	var $app_style$ = __webpack_require__(17)
+	var $app_script$ = __webpack_require__(18)
 	
 	$app_define$('@app-component/container', [], function($app_require$, $app_exports$, $app_module$){
 	     $app_script$($app_module$, $app_exports$, $app_require$)
@@ -105,7 +105,7 @@
 
 /***/ },
 
-/***/ 7:
+/***/ 16:
 /***/ function(module, exports) {
 
 	module.exports = {
@@ -127,7 +127,7 @@
 
 /***/ },
 
-/***/ 8:
+/***/ 17:
 /***/ function(module, exports) {
 
 	module.exports = {
@@ -142,7 +142,7 @@
 
 /***/ },
 
-/***/ 9:
+/***/ 18:
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = function(module, exports, $app_require$){'use strict';
@@ -150,7 +150,7 @@
 	Object.defineProperty(exports, "__esModule", {
 	  value: true
 	});
-	var initProps = __webpack_require__(5);
+	var initProps = __webpack_require__(14);
 	
 	exports.default = {
 	  props: ['bgColor'],
@@ -164,12 +164,12 @@
 
 /***/ },
 
-/***/ 10:
+/***/ 19:
 /***/ function(module, exports, __webpack_require__) {
 
-	var $app_template$ = __webpack_require__(11)
-	var $app_style$ = __webpack_require__(12)
-	var $app_script$ = __webpack_require__(13)
+	var $app_template$ = __webpack_require__(20)
+	var $app_style$ = __webpack_require__(21)
+	var $app_script$ = __webpack_require__(22)
 	
 	$app_define$('@app-component/wind-blank', [], function($app_require$, $app_exports$, $app_module$){
 	     $app_script$($app_module$, $app_exports$, $app_require$)
@@ -183,7 +183,7 @@
 
 /***/ },
 
-/***/ 11:
+/***/ 20:
 /***/ function(module, exports) {
 
 	module.exports = {
@@ -202,7 +202,7 @@
 
 /***/ },
 
-/***/ 12:
+/***/ 21:
 /***/ function(module, exports) {
 
 	module.exports = {
@@ -221,7 +221,7 @@
 
 /***/ },
 
-/***/ 13:
+/***/ 22:
 /***/ function(module, exports) {
 
 	module.exports = function(module, exports, $app_require$){"use strict";
@@ -233,12 +233,12 @@
 
 /***/ },
 
-/***/ 22:
+/***/ 27:
 /***/ function(module, exports, __webpack_require__) {
 
-	var $app_template$ = __webpack_require__(23)
-	var $app_style$ = __webpack_require__(24)
-	var $app_script$ = __webpack_require__(25)
+	var $app_template$ = __webpack_require__(28)
+	var $app_style$ = __webpack_require__(29)
+	var $app_script$ = __webpack_require__(30)
 	
 	$app_define$('@app-component/example-page', [], function($app_require$, $app_exports$, $app_module$){
 	     $app_script$($app_module$, $app_exports$, $app_require$)
@@ -252,7 +252,7 @@
 
 /***/ },
 
-/***/ 23:
+/***/ 28:
 /***/ function(module, exports) {
 
 	module.exports = {
@@ -304,7 +304,7 @@
 
 /***/ },
 
-/***/ 24:
+/***/ 29:
 /***/ function(module, exports) {
 
 	module.exports = {
@@ -352,7 +352,7 @@
 
 /***/ },
 
-/***/ 25:
+/***/ 30:
 /***/ function(module, exports) {
 
 	module.exports = function(module, exports, $app_require$){'use strict';
@@ -369,93 +369,12 @@
 
 /***/ },
 
-/***/ 108:
-/***/ function(module, exports) {
-
-	module.exports = {
-	  "type": "container",
-	  "attr": {},
-	  "children": [
-	    {
-	      "type": "example-page",
-	      "attr": {
-	        "title": "WindBlank",
-	        "name": "两翼留白"
-	      },
-	      "children": [
-	        {
-	          "type": "wind-blank",
-	          "attr": {},
-	          "children": [
-	            {
-	              "type": "blocks",
-	              "attr": {}
-	            }
-	          ]
-	        }
-	      ]
-	    }
-	  ]
-	}
-
-/***/ },
-
-/***/ 109:
-/***/ function(module, exports) {
-
-	module.exports = {}
-
-/***/ },
-
-/***/ 110:
-/***/ function(module, exports) {
-
-	module.exports = function(module, exports, $app_require$){'use strict';
-	
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-	
-	var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
-	
-	exports.default = {
-	  data: function data() {
-	    return {};
-	  }
-	};
-	
-	
-	var moduleOwn = exports.default || module.exports;
-	var accessors = ['public', 'protected', 'private'];
-	
-	if (moduleOwn.data && accessors.some(function (acc) {
-	  return moduleOwn[acc];
-	})) {
-	  throw new Error('页面VM对象中的属性data不可与"' + accessors.join(',') + '"同时存在，请使用private替换data名称');
-	} else if (!moduleOwn.data) {
-	  moduleOwn.data = {};
-	  moduleOwn._descriptor = {};
-	  accessors.forEach(function (acc) {
-	    var accType = _typeof(moduleOwn[acc]);
-	    if (accType === 'object') {
-	      moduleOwn.data = Object.assign(moduleOwn.data, moduleOwn[acc]);
-	      for (var name in moduleOwn[acc]) {
-	        moduleOwn._descriptor[name] = { access: acc };
-	      }
-	    } else if (accType === 'function') {
-	      console.warn('页面VM对象中的属性' + acc + '的值不能是函数，请使用对象');
-	    }
-	  });
-	}}
-
-/***/ },
-
-/***/ 112:
+/***/ 34:
 /***/ function(module, exports, __webpack_require__) {
 
-	var $app_template$ = __webpack_require__(113)
-	var $app_style$ = __webpack_require__(114)
-	var $app_script$ = __webpack_require__(115)
+	var $app_template$ = __webpack_require__(35)
+	var $app_style$ = __webpack_require__(36)
+	var $app_script$ = __webpack_require__(37)
 	
 	$app_define$('@app-component/blocks', [], function($app_require$, $app_exports$, $app_module$){
 	     $app_script$($app_module$, $app_exports$, $app_require$)
@@ -469,7 +388,7 @@
 
 /***/ },
 
-/***/ 113:
+/***/ 35:
 /***/ function(module, exports) {
 
 	module.exports = {
@@ -490,7 +409,7 @@
 
 /***/ },
 
-/***/ 114:
+/***/ 36:
 /***/ function(module, exports) {
 
 	module.exports = {
@@ -531,7 +450,7 @@
 
 /***/ },
 
-/***/ 115:
+/***/ 37:
 /***/ function(module, exports) {
 
 	module.exports = function(module, exports, $app_require$){"use strict";
@@ -540,6 +459,87 @@
 	  value: true
 	});
 	exports.default = {};}
+
+/***/ },
+
+/***/ 128:
+/***/ function(module, exports) {
+
+	module.exports = {
+	  "type": "container",
+	  "attr": {},
+	  "children": [
+	    {
+	      "type": "example-page",
+	      "attr": {
+	        "title": "WindBlank",
+	        "name": "两翼留白"
+	      },
+	      "children": [
+	        {
+	          "type": "wind-blank",
+	          "attr": {},
+	          "children": [
+	            {
+	              "type": "blocks",
+	              "attr": {}
+	            }
+	          ]
+	        }
+	      ]
+	    }
+	  ]
+	}
+
+/***/ },
+
+/***/ 129:
+/***/ function(module, exports) {
+
+	module.exports = {}
+
+/***/ },
+
+/***/ 130:
+/***/ function(module, exports) {
+
+	module.exports = function(module, exports, $app_require$){'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	
+	var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
+	
+	exports.default = {
+	  data: function data() {
+	    return {};
+	  }
+	};
+	
+	
+	var moduleOwn = exports.default || module.exports;
+	var accessors = ['public', 'protected', 'private'];
+	
+	if (moduleOwn.data && accessors.some(function (acc) {
+	  return moduleOwn[acc];
+	})) {
+	  throw new Error('页面VM对象中的属性data不可与"' + accessors.join(',') + '"同时存在，请使用private替换data名称');
+	} else if (!moduleOwn.data) {
+	  moduleOwn.data = {};
+	  moduleOwn._descriptor = {};
+	  accessors.forEach(function (acc) {
+	    var accType = _typeof(moduleOwn[acc]);
+	    if (accType === 'object') {
+	      moduleOwn.data = Object.assign(moduleOwn.data, moduleOwn[acc]);
+	      for (var name in moduleOwn[acc]) {
+	        moduleOwn._descriptor[name] = { access: acc };
+	      }
+	    } else if (accType === 'function') {
+	      console.warn('页面VM对象中的属性' + acc + '的值不能是函数，请使用对象');
+	    }
+	  });
+	}}
 
 /***/ }
 

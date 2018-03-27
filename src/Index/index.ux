@@ -20,12 +20,11 @@
     <cell-box head="基本元素">
       <cell label="Avatar" arrow="true" first="true" page="Avatar"></cell>
       <cell label="Divider" arrow="true" page="Divider"></cell>
+      <cell label="Mask" arrow="true" page="Mask"></cell>
     </cell-box>
     <white-space></white-space>
     <cell-box head="表单组件">
       <cell label="Input" arrow="true" first="true" page="InputField"></cell>
-      <!--<cell label="Select" arrow="true" page="SelectField"></cell>-->
-      <!--<cell label="Cascader" arrow="true"></cell>-->
       <cell label="Switch" arrow="true" page="SwitchField"></cell>
       <cell label="Radio" arrow="true" page="RadioField"></cell>
       <cell label="Slider" arrow="true" page="SliderField"></cell>

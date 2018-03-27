@@ -47,16 +47,16 @@
 /* 0 */
 /***/ function(module, exports, __webpack_require__) {
 
-	__webpack_require__(42)
-	__webpack_require__(46)
-	__webpack_require__(6)
-	__webpack_require__(1)
-	__webpack_require__(14)
-	__webpack_require__(18)
-	__webpack_require__(32)
-	var $app_template$ = __webpack_require__(50)
-	var $app_style$ = __webpack_require__(51)
-	var $app_script$ = __webpack_require__(52)
+	__webpack_require__(51)
+	__webpack_require__(55)
+	__webpack_require__(15)
+	__webpack_require__(10)
+	__webpack_require__(59)
+	__webpack_require__(23)
+	__webpack_require__(41)
+	var $app_template$ = __webpack_require__(63)
+	var $app_style$ = __webpack_require__(64)
+	var $app_script$ = __webpack_require__(65)
 	
 	$app_define$('@app-component/index', [], function($app_require$, $app_exports$, $app_module$){
 	     $app_script$($app_module$, $app_exports$, $app_require$)
@@ -71,12 +71,21 @@
 
 
 /***/ },
-/* 1 */
+/* 1 */,
+/* 2 */,
+/* 3 */,
+/* 4 */,
+/* 5 */,
+/* 6 */,
+/* 7 */,
+/* 8 */,
+/* 9 */,
+/* 10 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var $app_template$ = __webpack_require__(2)
-	var $app_style$ = __webpack_require__(3)
-	var $app_script$ = __webpack_require__(4)
+	var $app_template$ = __webpack_require__(11)
+	var $app_style$ = __webpack_require__(12)
+	var $app_script$ = __webpack_require__(13)
 	
 	$app_define$('@app-component/white-space', [], function($app_require$, $app_exports$, $app_module$){
 	     $app_script$($app_module$, $app_exports$, $app_require$)
@@ -89,7 +98,7 @@
 
 
 /***/ },
-/* 2 */
+/* 11 */
 /***/ function(module, exports) {
 
 	module.exports = {
@@ -104,7 +113,7 @@
 	}
 
 /***/ },
-/* 3 */
+/* 12 */
 /***/ function(module, exports) {
 
 	module.exports = {
@@ -115,7 +124,7 @@
 	}
 
 /***/ },
-/* 4 */
+/* 13 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = function(module, exports, $app_require$){'use strict';
@@ -123,7 +132,7 @@
 	Object.defineProperty(exports, "__esModule", {
 	    value: true
 	});
-	var initProps = __webpack_require__(5);
+	var initProps = __webpack_require__(14);
 	
 	exports.default = {
 	    props: ['size'],
@@ -152,7 +161,7 @@
 	};}
 
 /***/ },
-/* 5 */
+/* 14 */
 /***/ function(module, exports) {
 
 	module.exports = function (target) {
@@ -167,12 +176,12 @@
 	}
 
 /***/ },
-/* 6 */
+/* 15 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var $app_template$ = __webpack_require__(7)
-	var $app_style$ = __webpack_require__(8)
-	var $app_script$ = __webpack_require__(9)
+	var $app_template$ = __webpack_require__(16)
+	var $app_style$ = __webpack_require__(17)
+	var $app_script$ = __webpack_require__(18)
 	
 	$app_define$('@app-component/container', [], function($app_require$, $app_exports$, $app_module$){
 	     $app_script$($app_module$, $app_exports$, $app_require$)
@@ -185,7 +194,7 @@
 
 
 /***/ },
-/* 7 */
+/* 16 */
 /***/ function(module, exports) {
 
 	module.exports = {
@@ -206,7 +215,7 @@
 	}
 
 /***/ },
-/* 8 */
+/* 17 */
 /***/ function(module, exports) {
 
 	module.exports = {
@@ -220,7 +229,7 @@
 	}
 
 /***/ },
-/* 9 */
+/* 18 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = function(module, exports, $app_require$){'use strict';
@@ -228,7 +237,7 @@
 	Object.defineProperty(exports, "__esModule", {
 	  value: true
 	});
-	var initProps = __webpack_require__(5);
+	var initProps = __webpack_require__(14);
 	
 	exports.default = {
 	  props: ['bgColor'],
@@ -241,133 +250,16 @@
 	};}
 
 /***/ },
-/* 10 */,
-/* 11 */,
-/* 12 */,
-/* 13 */,
-/* 14 */
+/* 19 */,
+/* 20 */,
+/* 21 */,
+/* 22 */,
+/* 23 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var $app_template$ = __webpack_require__(15)
-	var $app_style$ = __webpack_require__(16)
-	var $app_script$ = __webpack_require__(17)
-	
-	$app_define$('@app-component/avatar', [], function($app_require$, $app_exports$, $app_module$){
-	     $app_script$($app_module$, $app_exports$, $app_require$)
-	     if ($app_exports$.__esModule && $app_exports$.default) {
-	            $app_module$.exports = $app_exports$.default
-	        }
-	     $app_module$.exports.template = $app_template$
-	     $app_module$.exports.style = $app_style$
-	})
-
-
-/***/ },
-/* 15 */
-/***/ function(module, exports) {
-
-	module.exports = {
-	  "type": "div",
-	  "attr": {},
-	  "classList": function () {return ['avatar', 'avatar-' + (this.size)]},
-	  "children": [
-	    {
-	      "type": "image",
-	      "attr": {
-	        "src": function () {return this.src},
-	        "alt": function () {return this.alt}
-	      }
-	    }
-	  ]
-	}
-
-/***/ },
-/* 16 */
-/***/ function(module, exports) {
-
-	module.exports = {
-	  ".avatar": {
-	    "backgroundColor": "#ffffff",
-	    "borderTopWidth": "1px",
-	    "borderRightWidth": "1px",
-	    "borderBottomWidth": "1px",
-	    "borderLeftWidth": "1px",
-	    "borderStyle": "solid",
-	    "borderTopColor": "#dddddd",
-	    "borderRightColor": "#dddddd",
-	    "borderBottomColor": "#dddddd",
-	    "borderLeftColor": "#dddddd"
-	  },
-	  ".avatar > image": {
-	    "resizeMode": "cover",
-	    "_meta": {
-	      "ruleDef": [
-	        {
-	          "t": "a",
-	          "n": "class",
-	          "i": false,
-	          "a": "element",
-	          "v": "avatar"
-	        },
-	        {
-	          "t": "child"
-	        },
-	        {
-	          "t": "t",
-	          "n": "image"
-	        }
-	      ]
-	    }
-	  },
-	  ".avatar-sm": {
-	    "height": "150px",
-	    "width": "150px",
-	    "borderRadius": "75px"
-	  },
-	  ".avatar-md": {
-	    "height": "250px",
-	    "width": "250px",
-	    "borderRadius": "125px"
-	  },
-	  ".avatar-lg": {
-	    "height": "300px",
-	    "width": "300px",
-	    "borderRadius": "150px"
-	  }
-	}
-
-/***/ },
-/* 17 */
-/***/ function(module, exports, __webpack_require__) {
-
-	module.exports = function(module, exports, $app_require$){'use strict';
-	
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-	var initProps = __webpack_require__(5);
-	
-	exports.default = {
-	  props: ['size', 'src', 'alt'],
-	  propsDefault: {
-	    size: 'sm',
-	    alt: 'image'
-	  },
-	  data: function data() {
-	    return {};
-	  },
-	  onInit: function onInit() {
-	    initProps(this);
-	  }
-	};}
-
-/***/ },
-/* 18 */
-/***/ function(module, exports, __webpack_require__) {
-
-	var $app_template$ = __webpack_require__(19)
-	var $app_style$ = __webpack_require__(20)
-	var $app_script$ = __webpack_require__(21)
+	var $app_template$ = __webpack_require__(24)
+	var $app_style$ = __webpack_require__(25)
+	var $app_script$ = __webpack_require__(26)
 	
 	$app_define$('@app-component/flex', [], function($app_require$, $app_exports$, $app_module$){
 	     $app_script$($app_module$, $app_exports$, $app_require$)
@@ -380,7 +272,7 @@
 
 
 /***/ },
-/* 19 */
+/* 24 */
 /***/ function(module, exports) {
 
 	module.exports = {
@@ -404,7 +296,7 @@
 	}
 
 /***/ },
-/* 20 */
+/* 25 */
 /***/ function(module, exports) {
 
 	module.exports = {
@@ -415,7 +307,7 @@
 	}
 
 /***/ },
-/* 21 */
+/* 26 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = function(module, exports, $app_require$){'use strict';
@@ -423,7 +315,7 @@
 	Object.defineProperty(exports, "__esModule", {
 	    value: true
 	});
-	var initProps = __webpack_require__(5);
+	var initProps = __webpack_require__(14);
 	
 	exports.default = {
 	    props: ['justify', 'align', 'wrap', 'direction'],
@@ -442,22 +334,26 @@
 	};}
 
 /***/ },
-/* 22 */,
-/* 23 */,
-/* 24 */,
-/* 25 */,
-/* 26 */,
 /* 27 */,
 /* 28 */,
 /* 29 */,
 /* 30 */,
 /* 31 */,
-/* 32 */
+/* 32 */,
+/* 33 */,
+/* 34 */,
+/* 35 */,
+/* 36 */,
+/* 37 */,
+/* 38 */,
+/* 39 */,
+/* 40 */,
+/* 41 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var $app_template$ = __webpack_require__(33)
-	var $app_style$ = __webpack_require__(34)
-	var $app_script$ = __webpack_require__(35)
+	var $app_template$ = __webpack_require__(42)
+	var $app_style$ = __webpack_require__(43)
+	var $app_script$ = __webpack_require__(44)
 	
 	$app_define$('@app-component/divider', [], function($app_require$, $app_exports$, $app_module$){
 	     $app_script$($app_module$, $app_exports$, $app_require$)
@@ -470,7 +366,7 @@
 
 
 /***/ },
-/* 33 */
+/* 42 */
 /***/ function(module, exports) {
 
 	module.exports = {
@@ -503,7 +399,7 @@
 	}
 
 /***/ },
-/* 34 */
+/* 43 */
 /***/ function(module, exports) {
 
 	module.exports = {
@@ -527,7 +423,7 @@
 	}
 
 /***/ },
-/* 35 */
+/* 44 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = function(module, exports, $app_require$){'use strict';
@@ -535,7 +431,7 @@
 	Object.defineProperty(exports, "__esModule", {
 	  value: true
 	});
-	var initProps = __webpack_require__(5);
+	var initProps = __webpack_require__(14);
 	
 	exports.default = {
 	  props: ['text', 'bgColor'],
@@ -552,18 +448,18 @@
 	};}
 
 /***/ },
-/* 36 */,
-/* 37 */,
-/* 38 */,
-/* 39 */,
-/* 40 */,
-/* 41 */,
-/* 42 */
+/* 45 */,
+/* 46 */,
+/* 47 */,
+/* 48 */,
+/* 49 */,
+/* 50 */,
+/* 51 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var $app_template$ = __webpack_require__(43)
-	var $app_style$ = __webpack_require__(44)
-	var $app_script$ = __webpack_require__(45)
+	var $app_template$ = __webpack_require__(52)
+	var $app_style$ = __webpack_require__(53)
+	var $app_script$ = __webpack_require__(54)
 	
 	$app_define$('@app-component/cell-box', [], function($app_require$, $app_exports$, $app_module$){
 	     $app_script$($app_module$, $app_exports$, $app_require$)
@@ -576,7 +472,7 @@
 
 
 /***/ },
-/* 43 */
+/* 52 */
 /***/ function(module, exports) {
 
 	module.exports = {
@@ -618,7 +514,7 @@
 	}
 
 /***/ },
-/* 44 */
+/* 53 */
 /***/ function(module, exports) {
 
 	module.exports = {
@@ -657,7 +553,7 @@
 	}
 
 /***/ },
-/* 45 */
+/* 54 */
 /***/ function(module, exports) {
 
 	module.exports = function(module, exports, $app_require$){'use strict';
@@ -673,12 +569,12 @@
 	};}
 
 /***/ },
-/* 46 */
+/* 55 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var $app_template$ = __webpack_require__(47)
-	var $app_style$ = __webpack_require__(48)
-	var $app_script$ = __webpack_require__(49)
+	var $app_template$ = __webpack_require__(56)
+	var $app_style$ = __webpack_require__(57)
+	var $app_script$ = __webpack_require__(58)
 	
 	$app_define$('@app-component/cell', [], function($app_require$, $app_exports$, $app_module$){
 	     $app_script$($app_module$, $app_exports$, $app_require$)
@@ -691,7 +587,7 @@
 
 
 /***/ },
-/* 47 */
+/* 56 */
 /***/ function(module, exports) {
 
 	module.exports = {
@@ -746,7 +642,7 @@
 	}
 
 /***/ },
-/* 48 */
+/* 57 */
 /***/ function(module, exports) {
 
 	module.exports = {
@@ -785,7 +681,7 @@
 	}
 
 /***/ },
-/* 49 */
+/* 58 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = function(module, exports, $app_require$){'use strict';
@@ -800,7 +696,7 @@
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
-	var initProps = __webpack_require__(5);
+	var initProps = __webpack_require__(14);
 	exports.default = {
 	  props: ['extra', 'arrow', 'label', 'first', 'page'],
 	  propsDefault: {
@@ -822,7 +718,124 @@
 	};}
 
 /***/ },
-/* 50 */
+/* 59 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var $app_template$ = __webpack_require__(60)
+	var $app_style$ = __webpack_require__(61)
+	var $app_script$ = __webpack_require__(62)
+	
+	$app_define$('@app-component/avatar', [], function($app_require$, $app_exports$, $app_module$){
+	     $app_script$($app_module$, $app_exports$, $app_require$)
+	     if ($app_exports$.__esModule && $app_exports$.default) {
+	            $app_module$.exports = $app_exports$.default
+	        }
+	     $app_module$.exports.template = $app_template$
+	     $app_module$.exports.style = $app_style$
+	})
+
+
+/***/ },
+/* 60 */
+/***/ function(module, exports) {
+
+	module.exports = {
+	  "type": "div",
+	  "attr": {},
+	  "classList": function () {return ['avatar', 'avatar-' + (this.size)]},
+	  "children": [
+	    {
+	      "type": "image",
+	      "attr": {
+	        "src": function () {return this.src},
+	        "alt": function () {return this.alt}
+	      }
+	    }
+	  ]
+	}
+
+/***/ },
+/* 61 */
+/***/ function(module, exports) {
+
+	module.exports = {
+	  ".avatar": {
+	    "backgroundColor": "#ffffff",
+	    "borderTopWidth": "1px",
+	    "borderRightWidth": "1px",
+	    "borderBottomWidth": "1px",
+	    "borderLeftWidth": "1px",
+	    "borderStyle": "solid",
+	    "borderTopColor": "#dddddd",
+	    "borderRightColor": "#dddddd",
+	    "borderBottomColor": "#dddddd",
+	    "borderLeftColor": "#dddddd"
+	  },
+	  ".avatar > image": {
+	    "resizeMode": "cover",
+	    "_meta": {
+	      "ruleDef": [
+	        {
+	          "t": "a",
+	          "n": "class",
+	          "i": false,
+	          "a": "element",
+	          "v": "avatar"
+	        },
+	        {
+	          "t": "child"
+	        },
+	        {
+	          "t": "t",
+	          "n": "image"
+	        }
+	      ]
+	    }
+	  },
+	  ".avatar-sm": {
+	    "height": "150px",
+	    "width": "150px",
+	    "borderRadius": "75px"
+	  },
+	  ".avatar-md": {
+	    "height": "250px",
+	    "width": "250px",
+	    "borderRadius": "125px"
+	  },
+	  ".avatar-lg": {
+	    "height": "300px",
+	    "width": "300px",
+	    "borderRadius": "150px"
+	  }
+	}
+
+/***/ },
+/* 62 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = function(module, exports, $app_require$){'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	var initProps = __webpack_require__(14);
+	
+	exports.default = {
+	  props: ['size', 'src', 'alt'],
+	  propsDefault: {
+	    size: 'sm',
+	    alt: 'image'
+	  },
+	  data: function data() {
+	    return {};
+	  },
+	  onInit: function onInit() {
+	    initProps(this);
+	  }
+	};}
+
+/***/ },
+/* 63 */
 /***/ function(module, exports) {
 
 	module.exports = {
@@ -897,6 +910,14 @@
 	            "label": "Divider",
 	            "arrow": "true",
 	            "page": "Divider"
+	          }
+	        },
+	        {
+	          "type": "cell",
+	          "attr": {
+	            "label": "Mask",
+	            "arrow": "true",
+	            "page": "Mask"
 	          }
 	        }
 	      ]
@@ -1036,7 +1057,7 @@
 	}
 
 /***/ },
-/* 51 */
+/* 64 */
 /***/ function(module, exports) {
 
 	module.exports = {
@@ -1046,7 +1067,7 @@
 	}
 
 /***/ },
-/* 52 */
+/* 65 */
 /***/ function(module, exports) {
 
 	module.exports = function(module, exports, $app_require$){'use strict';

@@ -48,13 +48,13 @@
 /***/ 0:
 /***/ function(module, exports, __webpack_require__) {
 
-	__webpack_require__(89)
-	__webpack_require__(42)
-	__webpack_require__(6)
-	__webpack_require__(1)
-	var $app_template$ = __webpack_require__(93)
-	var $app_style$ = __webpack_require__(94)
-	var $app_script$ = __webpack_require__(95)
+	__webpack_require__(109)
+	__webpack_require__(51)
+	__webpack_require__(15)
+	__webpack_require__(10)
+	var $app_template$ = __webpack_require__(113)
+	var $app_style$ = __webpack_require__(114)
+	var $app_script$ = __webpack_require__(115)
 	
 	$app_define$('@app-component/index', [], function($app_require$, $app_exports$, $app_module$){
 	     $app_script$($app_module$, $app_exports$, $app_require$)
@@ -70,12 +70,12 @@
 
 /***/ },
 
-/***/ 1:
+/***/ 10:
 /***/ function(module, exports, __webpack_require__) {
 
-	var $app_template$ = __webpack_require__(2)
-	var $app_style$ = __webpack_require__(3)
-	var $app_script$ = __webpack_require__(4)
+	var $app_template$ = __webpack_require__(11)
+	var $app_style$ = __webpack_require__(12)
+	var $app_script$ = __webpack_require__(13)
 	
 	$app_define$('@app-component/white-space', [], function($app_require$, $app_exports$, $app_module$){
 	     $app_script$($app_module$, $app_exports$, $app_require$)
@@ -89,7 +89,7 @@
 
 /***/ },
 
-/***/ 2:
+/***/ 11:
 /***/ function(module, exports) {
 
 	module.exports = {
@@ -105,7 +105,7 @@
 
 /***/ },
 
-/***/ 3:
+/***/ 12:
 /***/ function(module, exports) {
 
 	module.exports = {
@@ -117,7 +117,7 @@
 
 /***/ },
 
-/***/ 4:
+/***/ 13:
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = function(module, exports, $app_require$){'use strict';
@@ -125,7 +125,7 @@
 	Object.defineProperty(exports, "__esModule", {
 	    value: true
 	});
-	var initProps = __webpack_require__(5);
+	var initProps = __webpack_require__(14);
 	
 	exports.default = {
 	    props: ['size'],
@@ -155,7 +155,7 @@
 
 /***/ },
 
-/***/ 5:
+/***/ 14:
 /***/ function(module, exports) {
 
 	module.exports = function (target) {
@@ -171,12 +171,12 @@
 
 /***/ },
 
-/***/ 6:
+/***/ 15:
 /***/ function(module, exports, __webpack_require__) {
 
-	var $app_template$ = __webpack_require__(7)
-	var $app_style$ = __webpack_require__(8)
-	var $app_script$ = __webpack_require__(9)
+	var $app_template$ = __webpack_require__(16)
+	var $app_style$ = __webpack_require__(17)
+	var $app_script$ = __webpack_require__(18)
 	
 	$app_define$('@app-component/container', [], function($app_require$, $app_exports$, $app_module$){
 	     $app_script$($app_module$, $app_exports$, $app_require$)
@@ -190,7 +190,7 @@
 
 /***/ },
 
-/***/ 7:
+/***/ 16:
 /***/ function(module, exports) {
 
 	module.exports = {
@@ -212,7 +212,7 @@
 
 /***/ },
 
-/***/ 8:
+/***/ 17:
 /***/ function(module, exports) {
 
 	module.exports = {
@@ -227,7 +227,7 @@
 
 /***/ },
 
-/***/ 9:
+/***/ 18:
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = function(module, exports, $app_require$){'use strict';
@@ -235,7 +235,7 @@
 	Object.defineProperty(exports, "__esModule", {
 	  value: true
 	});
-	var initProps = __webpack_require__(5);
+	var initProps = __webpack_require__(14);
 	
 	exports.default = {
 	  props: ['bgColor'],
@@ -249,12 +249,12 @@
 
 /***/ },
 
-/***/ 42:
+/***/ 51:
 /***/ function(module, exports, __webpack_require__) {
 
-	var $app_template$ = __webpack_require__(43)
-	var $app_style$ = __webpack_require__(44)
-	var $app_script$ = __webpack_require__(45)
+	var $app_template$ = __webpack_require__(52)
+	var $app_style$ = __webpack_require__(53)
+	var $app_script$ = __webpack_require__(54)
 	
 	$app_define$('@app-component/cell-box', [], function($app_require$, $app_exports$, $app_module$){
 	     $app_script$($app_module$, $app_exports$, $app_require$)
@@ -268,7 +268,7 @@
 
 /***/ },
 
-/***/ 43:
+/***/ 52:
 /***/ function(module, exports) {
 
 	module.exports = {
@@ -311,7 +311,7 @@
 
 /***/ },
 
-/***/ 44:
+/***/ 53:
 /***/ function(module, exports) {
 
 	module.exports = {
@@ -351,7 +351,7 @@
 
 /***/ },
 
-/***/ 45:
+/***/ 54:
 /***/ function(module, exports) {
 
 	module.exports = function(module, exports, $app_require$){'use strict';
@@ -368,12 +368,12 @@
 
 /***/ },
 
-/***/ 79:
+/***/ 99:
 /***/ function(module, exports, __webpack_require__) {
 
-	var $app_template$ = __webpack_require__(80)
-	var $app_style$ = __webpack_require__(81)
-	var $app_script$ = __webpack_require__(82)
+	var $app_template$ = __webpack_require__(100)
+	var $app_style$ = __webpack_require__(101)
+	var $app_script$ = __webpack_require__(102)
 	
 	$app_define$('@app-component/modal', [], function($app_require$, $app_exports$, $app_module$){
 	     $app_script$($app_module$, $app_exports$, $app_require$)
@@ -387,7 +387,7 @@
 
 /***/ },
 
-/***/ 80:
+/***/ 100:
 /***/ function(module, exports) {
 
 	module.exports = {
@@ -494,7 +494,7 @@
 
 /***/ },
 
-/***/ 81:
+/***/ 101:
 /***/ function(module, exports) {
 
 	module.exports = {
@@ -532,7 +532,51 @@
 	        "transform": "{\"translateY\":\"-3000px\"}",
 	        "time": 100
 	      }
+	    ],
+	    "fadeIn": [
+	      {
+	        "opacity": 1,
+	        "height": "1000px",
+	        "width": "1000px",
+	        "time": 0
+	      },
+	      {
+	        "opacity": 0.5,
+	        "height": "0px",
+	        "width": "0px",
+	        "time": 100
+	      }
+	    ],
+	    "fadeOut": [
+	      {
+	        "opacity": 0.5,
+	        "height": "0px",
+	        "width": "0px",
+	        "time": 0
+	      },
+	      {
+	        "opacity": 1,
+	        "height": "1000px",
+	        "width": "1000px",
+	        "time": 100
+	      }
 	    ]
+	  },
+	  ".fade-in": {
+	    "opacity": 0,
+	    "height": "0px",
+	    "width": "0px",
+	    "animationName": "fadeIn",
+	    "animationDuration": "500ms",
+	    "animationTimingFunction": "ease-out"
+	  },
+	  ".fade-out": {
+	    "opacity": 1,
+	    "height": "1000px",
+	    "width": "1000px",
+	    "animationName": "fadeIn",
+	    "animationDuration": "500ms",
+	    "animationTimingFunction": "ease-out"
 	  },
 	  ".modal": {
 	    "position": "fixed",
@@ -639,7 +683,7 @@
 
 /***/ },
 
-/***/ 82:
+/***/ 102:
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = function(module, exports, $app_require$){'use strict';
@@ -647,7 +691,7 @@
 	Object.defineProperty(exports, "__esModule", {
 	  value: true
 	});
-	var initProps = __webpack_require__(5);
+	var initProps = __webpack_require__(14);
 	
 	exports.default = {
 	  props: ['visible', 'title', 'message', 'footerList'],
@@ -706,13 +750,13 @@
 
 /***/ },
 
-/***/ 89:
+/***/ 109:
 /***/ function(module, exports, __webpack_require__) {
 
-	__webpack_require__(79)
-	var $app_template$ = __webpack_require__(90)
-	var $app_style$ = __webpack_require__(91)
-	var $app_script$ = __webpack_require__(92)
+	__webpack_require__(99)
+	var $app_template$ = __webpack_require__(110)
+	var $app_style$ = __webpack_require__(111)
+	var $app_script$ = __webpack_require__(112)
 	
 	$app_define$('@app-component/select-field', [], function($app_require$, $app_exports$, $app_module$){
 	     $app_script$($app_module$, $app_exports$, $app_require$)
@@ -726,7 +770,7 @@
 
 /***/ },
 
-/***/ 90:
+/***/ 110:
 /***/ function(module, exports) {
 
 	module.exports = {
@@ -854,7 +898,7 @@
 
 /***/ },
 
-/***/ 91:
+/***/ 111:
 /***/ function(module, exports) {
 
 	module.exports = {
@@ -921,7 +965,51 @@
 	        "transform": "{\"translateY\":\"-3000px\"}",
 	        "time": 100
 	      }
+	    ],
+	    "fadeIn": [
+	      {
+	        "opacity": 1,
+	        "height": "1000px",
+	        "width": "1000px",
+	        "time": 0
+	      },
+	      {
+	        "opacity": 0.5,
+	        "height": "0px",
+	        "width": "0px",
+	        "time": 100
+	      }
+	    ],
+	    "fadeOut": [
+	      {
+	        "opacity": 0.5,
+	        "height": "0px",
+	        "width": "0px",
+	        "time": 0
+	      },
+	      {
+	        "opacity": 1,
+	        "height": "1000px",
+	        "width": "1000px",
+	        "time": 100
+	      }
 	    ]
+	  },
+	  ".fade-in": {
+	    "opacity": 0,
+	    "height": "0px",
+	    "width": "0px",
+	    "animationName": "fadeIn",
+	    "animationDuration": "500ms",
+	    "animationTimingFunction": "ease-out"
+	  },
+	  ".fade-out": {
+	    "opacity": 1,
+	    "height": "1000px",
+	    "width": "1000px",
+	    "animationName": "fadeIn",
+	    "animationDuration": "500ms",
+	    "animationTimingFunction": "ease-out"
 	  },
 	  ".modal": {
 	    "position": "fixed",
@@ -1028,7 +1116,7 @@
 
 /***/ },
 
-/***/ 92:
+/***/ 112:
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = function(module, exports, $app_require$){'use strict';
@@ -1036,13 +1124,12 @@
 	Object.defineProperty(exports, "__esModule", {
 	  value: true
 	});
-	var initProps = __webpack_require__(5);
+	var initProps = __webpack_require__(14);
 	
 	exports.default = {
-	  props: ['label', 'first', 'options', 'type', 'title'],
+	  props: ['label', 'first', 'options', 'title'],
 	  propsDefault: {
 	    first: false,
-	    type: 'text',
 	    options: [{
 	      id: -1,
 	      label: '请选择'
@@ -1093,7 +1180,7 @@
 
 /***/ },
 
-/***/ 93:
+/***/ 113:
 /***/ function(module, exports) {
 
 	module.exports = {
@@ -1126,14 +1213,14 @@
 
 /***/ },
 
-/***/ 94:
+/***/ 114:
 /***/ function(module, exports) {
 
 	module.exports = {}
 
 /***/ },
 
-/***/ 95:
+/***/ 115:
 /***/ function(module, exports) {
 
 	module.exports = function(module, exports, $app_require$){'use strict';
